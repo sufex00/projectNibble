@@ -1,0 +1,753 @@
+// Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition"
+
+// DATE "10/28/2016 22:34:45"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Decoder (
+	ADDR,
+	INST,
+	OP,
+	X,
+	Y);
+output 	[4:0] ADDR;
+input 	[23:0] INST;
+output 	[2:0] OP;
+output 	[7:0] X;
+output 	[7:0] Y;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \ADDR[4]~output_o ;
+wire \ADDR[3]~output_o ;
+wire \ADDR[2]~output_o ;
+wire \ADDR[1]~output_o ;
+wire \ADDR[0]~output_o ;
+wire \OP[2]~output_o ;
+wire \OP[1]~output_o ;
+wire \OP[0]~output_o ;
+wire \X[7]~output_o ;
+wire \X[6]~output_o ;
+wire \X[5]~output_o ;
+wire \X[4]~output_o ;
+wire \X[3]~output_o ;
+wire \X[2]~output_o ;
+wire \X[1]~output_o ;
+wire \X[0]~output_o ;
+wire \Y[7]~output_o ;
+wire \Y[6]~output_o ;
+wire \Y[5]~output_o ;
+wire \Y[4]~output_o ;
+wire \Y[3]~output_o ;
+wire \Y[2]~output_o ;
+wire \Y[1]~output_o ;
+wire \Y[0]~output_o ;
+wire \INST[20]~input_o ;
+wire \INST[19]~input_o ;
+wire \INST[18]~input_o ;
+wire \INST[17]~input_o ;
+wire \INST[16]~input_o ;
+wire \INST[23]~input_o ;
+wire \INST[22]~input_o ;
+wire \INST[21]~input_o ;
+wire \INST[15]~input_o ;
+wire \INST[14]~input_o ;
+wire \INST[13]~input_o ;
+wire \INST[12]~input_o ;
+wire \INST[11]~input_o ;
+wire \INST[10]~input_o ;
+wire \INST[9]~input_o ;
+wire \INST[8]~input_o ;
+wire \INST[7]~input_o ;
+wire \INST[6]~input_o ;
+wire \INST[5]~input_o ;
+wire \INST[4]~input_o ;
+wire \INST[3]~input_o ;
+wire \INST[2]~input_o ;
+wire \INST[1]~input_o ;
+wire \INST[0]~input_o ;
+
+
+cyclonev_io_obuf \ADDR[4]~output (
+	.i(\INST[20]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ADDR[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ADDR[4]~output .bus_hold = "false";
+defparam \ADDR[4]~output .open_drain_output = "false";
+defparam \ADDR[4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \ADDR[3]~output (
+	.i(\INST[19]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ADDR[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ADDR[3]~output .bus_hold = "false";
+defparam \ADDR[3]~output .open_drain_output = "false";
+defparam \ADDR[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \ADDR[2]~output (
+	.i(\INST[18]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ADDR[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ADDR[2]~output .bus_hold = "false";
+defparam \ADDR[2]~output .open_drain_output = "false";
+defparam \ADDR[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \ADDR[1]~output (
+	.i(\INST[17]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ADDR[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ADDR[1]~output .bus_hold = "false";
+defparam \ADDR[1]~output .open_drain_output = "false";
+defparam \ADDR[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \ADDR[0]~output (
+	.i(\INST[16]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ADDR[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ADDR[0]~output .bus_hold = "false";
+defparam \ADDR[0]~output .open_drain_output = "false";
+defparam \ADDR[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \OP[2]~output (
+	.i(\INST[23]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\OP[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \OP[2]~output .bus_hold = "false";
+defparam \OP[2]~output .open_drain_output = "false";
+defparam \OP[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \OP[1]~output (
+	.i(\INST[22]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\OP[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \OP[1]~output .bus_hold = "false";
+defparam \OP[1]~output .open_drain_output = "false";
+defparam \OP[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \OP[0]~output (
+	.i(\INST[21]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\OP[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \OP[0]~output .bus_hold = "false";
+defparam \OP[0]~output .open_drain_output = "false";
+defparam \OP[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \X[7]~output (
+	.i(\INST[15]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\X[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \X[7]~output .bus_hold = "false";
+defparam \X[7]~output .open_drain_output = "false";
+defparam \X[7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \X[6]~output (
+	.i(\INST[14]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\X[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \X[6]~output .bus_hold = "false";
+defparam \X[6]~output .open_drain_output = "false";
+defparam \X[6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \X[5]~output (
+	.i(\INST[13]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\X[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \X[5]~output .bus_hold = "false";
+defparam \X[5]~output .open_drain_output = "false";
+defparam \X[5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \X[4]~output (
+	.i(\INST[12]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\X[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \X[4]~output .bus_hold = "false";
+defparam \X[4]~output .open_drain_output = "false";
+defparam \X[4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \X[3]~output (
+	.i(\INST[11]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\X[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \X[3]~output .bus_hold = "false";
+defparam \X[3]~output .open_drain_output = "false";
+defparam \X[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \X[2]~output (
+	.i(\INST[10]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\X[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \X[2]~output .bus_hold = "false";
+defparam \X[2]~output .open_drain_output = "false";
+defparam \X[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \X[1]~output (
+	.i(\INST[9]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\X[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \X[1]~output .bus_hold = "false";
+defparam \X[1]~output .open_drain_output = "false";
+defparam \X[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \X[0]~output (
+	.i(\INST[8]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\X[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \X[0]~output .bus_hold = "false";
+defparam \X[0]~output .open_drain_output = "false";
+defparam \X[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[7]~output (
+	.i(\INST[7]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[7]~output .bus_hold = "false";
+defparam \Y[7]~output .open_drain_output = "false";
+defparam \Y[7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[6]~output (
+	.i(\INST[6]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[6]~output .bus_hold = "false";
+defparam \Y[6]~output .open_drain_output = "false";
+defparam \Y[6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[5]~output (
+	.i(\INST[5]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[5]~output .bus_hold = "false";
+defparam \Y[5]~output .open_drain_output = "false";
+defparam \Y[5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[4]~output (
+	.i(\INST[4]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[4]~output .bus_hold = "false";
+defparam \Y[4]~output .open_drain_output = "false";
+defparam \Y[4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[3]~output (
+	.i(\INST[3]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[3]~output .bus_hold = "false";
+defparam \Y[3]~output .open_drain_output = "false";
+defparam \Y[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[2]~output (
+	.i(\INST[2]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[2]~output .bus_hold = "false";
+defparam \Y[2]~output .open_drain_output = "false";
+defparam \Y[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[1]~output (
+	.i(\INST[1]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[1]~output .bus_hold = "false";
+defparam \Y[1]~output .open_drain_output = "false";
+defparam \Y[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[0]~output (
+	.i(\INST[0]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[0]~output .bus_hold = "false";
+defparam \Y[0]~output .open_drain_output = "false";
+defparam \Y[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[20]~input (
+	.i(INST[20]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[20]~input_o ));
+// synopsys translate_off
+defparam \INST[20]~input .bus_hold = "false";
+defparam \INST[20]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[19]~input (
+	.i(INST[19]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[19]~input_o ));
+// synopsys translate_off
+defparam \INST[19]~input .bus_hold = "false";
+defparam \INST[19]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[18]~input (
+	.i(INST[18]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[18]~input_o ));
+// synopsys translate_off
+defparam \INST[18]~input .bus_hold = "false";
+defparam \INST[18]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[17]~input (
+	.i(INST[17]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[17]~input_o ));
+// synopsys translate_off
+defparam \INST[17]~input .bus_hold = "false";
+defparam \INST[17]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[16]~input (
+	.i(INST[16]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[16]~input_o ));
+// synopsys translate_off
+defparam \INST[16]~input .bus_hold = "false";
+defparam \INST[16]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[23]~input (
+	.i(INST[23]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[23]~input_o ));
+// synopsys translate_off
+defparam \INST[23]~input .bus_hold = "false";
+defparam \INST[23]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[22]~input (
+	.i(INST[22]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[22]~input_o ));
+// synopsys translate_off
+defparam \INST[22]~input .bus_hold = "false";
+defparam \INST[22]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[21]~input (
+	.i(INST[21]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[21]~input_o ));
+// synopsys translate_off
+defparam \INST[21]~input .bus_hold = "false";
+defparam \INST[21]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[15]~input (
+	.i(INST[15]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[15]~input_o ));
+// synopsys translate_off
+defparam \INST[15]~input .bus_hold = "false";
+defparam \INST[15]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[14]~input (
+	.i(INST[14]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[14]~input_o ));
+// synopsys translate_off
+defparam \INST[14]~input .bus_hold = "false";
+defparam \INST[14]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[13]~input (
+	.i(INST[13]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[13]~input_o ));
+// synopsys translate_off
+defparam \INST[13]~input .bus_hold = "false";
+defparam \INST[13]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[12]~input (
+	.i(INST[12]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[12]~input_o ));
+// synopsys translate_off
+defparam \INST[12]~input .bus_hold = "false";
+defparam \INST[12]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[11]~input (
+	.i(INST[11]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[11]~input_o ));
+// synopsys translate_off
+defparam \INST[11]~input .bus_hold = "false";
+defparam \INST[11]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[10]~input (
+	.i(INST[10]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[10]~input_o ));
+// synopsys translate_off
+defparam \INST[10]~input .bus_hold = "false";
+defparam \INST[10]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[9]~input (
+	.i(INST[9]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[9]~input_o ));
+// synopsys translate_off
+defparam \INST[9]~input .bus_hold = "false";
+defparam \INST[9]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[8]~input (
+	.i(INST[8]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[8]~input_o ));
+// synopsys translate_off
+defparam \INST[8]~input .bus_hold = "false";
+defparam \INST[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[7]~input (
+	.i(INST[7]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[7]~input_o ));
+// synopsys translate_off
+defparam \INST[7]~input .bus_hold = "false";
+defparam \INST[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[6]~input (
+	.i(INST[6]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[6]~input_o ));
+// synopsys translate_off
+defparam \INST[6]~input .bus_hold = "false";
+defparam \INST[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[5]~input (
+	.i(INST[5]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[5]~input_o ));
+// synopsys translate_off
+defparam \INST[5]~input .bus_hold = "false";
+defparam \INST[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[4]~input (
+	.i(INST[4]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[4]~input_o ));
+// synopsys translate_off
+defparam \INST[4]~input .bus_hold = "false";
+defparam \INST[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[3]~input (
+	.i(INST[3]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[3]~input_o ));
+// synopsys translate_off
+defparam \INST[3]~input .bus_hold = "false";
+defparam \INST[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[2]~input (
+	.i(INST[2]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[2]~input_o ));
+// synopsys translate_off
+defparam \INST[2]~input .bus_hold = "false";
+defparam \INST[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[1]~input (
+	.i(INST[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[1]~input_o ));
+// synopsys translate_off
+defparam \INST[1]~input .bus_hold = "false";
+defparam \INST[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \INST[0]~input (
+	.i(INST[0]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\INST[0]~input_o ));
+// synopsys translate_off
+defparam \INST[0]~input .bus_hold = "false";
+defparam \INST[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign ADDR[4] = \ADDR[4]~output_o ;
+
+assign ADDR[3] = \ADDR[3]~output_o ;
+
+assign ADDR[2] = \ADDR[2]~output_o ;
+
+assign ADDR[1] = \ADDR[1]~output_o ;
+
+assign ADDR[0] = \ADDR[0]~output_o ;
+
+assign OP[2] = \OP[2]~output_o ;
+
+assign OP[1] = \OP[1]~output_o ;
+
+assign OP[0] = \OP[0]~output_o ;
+
+assign X[7] = \X[7]~output_o ;
+
+assign X[6] = \X[6]~output_o ;
+
+assign X[5] = \X[5]~output_o ;
+
+assign X[4] = \X[4]~output_o ;
+
+assign X[3] = \X[3]~output_o ;
+
+assign X[2] = \X[2]~output_o ;
+
+assign X[1] = \X[1]~output_o ;
+
+assign X[0] = \X[0]~output_o ;
+
+assign Y[7] = \Y[7]~output_o ;
+
+assign Y[6] = \Y[6]~output_o ;
+
+assign Y[5] = \Y[5]~output_o ;
+
+assign Y[4] = \Y[4]~output_o ;
+
+assign Y[3] = \Y[3]~output_o ;
+
+assign Y[2] = \Y[2]~output_o ;
+
+assign Y[1] = \Y[1]~output_o ;
+
+assign Y[0] = \Y[0]~output_o ;
+
+endmodule
