@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pedro/projectNibble/Registator/simulation/qsim
+vdffe4
+Z1 !s110 1478131209
+!i10b 1
+!s100 h;ZUSzMbRHO7OITBnc0<[1
+ID<RH2<nXdd72S;3c>8>803
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1478131209
+Z3 8Registrator.vo
+Z4 FRegistrator.vo
+Z5 L0 32
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1478131209.000000
+Z8 !s107 Registrator.vo|
+Z9 !s90 -work|work|Registrator.vo|
+!i113 1
+Z10 o-work work
+vdffe4_vlg_vec_tst
+R1
+!i10b 1
+!s100 @0ebE<F[hPo`Z54ORUlE@3
+I@EKKEYVB=A47ZW>:C7e^P1
+R2
+R0
+w1478131207
+Z11 8Waveform.vwf.vt
+Z12 FWaveform.vwf.vt
+Z13 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+Z14 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+vdffe8
+Z15 !s110 1478132643
+!i10b 1
+!s100 5OXTnh?CC8V9OVRj]JjfO2
+Ik;XI>M>z0jTF8gK5mJY4;3
+R2
+R0
+w1478132642
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z16 !s108 1478132643.000000
+R8
+R9
+!i113 1
+R10
+vdffe8_vlg_vec_tst
+R15
+!i10b 1
+!s100 TT6M8_R<fP?kK@@C4J?V>0
+IXODYLn7NJGJ;Cd1NVzX3`2
+R2
+R0
+w1478132641
+R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R16
+!s107 Waveform.vwf.vt|
+R14
+!i113 1
+R10
