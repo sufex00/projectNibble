@@ -1,5 +1,5 @@
 Flow report for Complemento2
-Wed Nov  2 22:06:32 2016
+Thu Nov  3 10:45:56 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Nov  2 22:06:32 2016       ;
+; Flow Status                     ; Successful - Thu Nov  3 10:45:56 2016       ;
 ; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                   ; Complemento2                                ;
 ; Top-level Entity Name           ; Complemento2                                ;
@@ -100,7 +100,9 @@ agreement for further details.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1383 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1379 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 1383 MB             ; 00:00:01                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:41                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1379 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1383 MB             ; 00:00:01                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:43                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,6 +116,8 @@ agreement for further details.
 ; EDA Netlist Writer   ; pedro-Aspire-E1-572 ; Ubuntu 16.04 ; 16         ; x86_64         ;
 ; EDA Netlist Writer   ; pedro-Aspire-E1-572 ; Ubuntu 16.04 ; 16         ; x86_64         ;
 ; EDA Netlist Writer   ; pedro-Aspire-E1-572 ; Ubuntu 16.04 ; 16         ; x86_64         ;
+; EDA Netlist Writer   ; IC-123456           ; Ubuntu 15.04 ; 15         ; x86_64         ;
+; EDA Netlist Writer   ; IC-123456           ; Ubuntu 15.04 ; 15         ; x86_64         ;
 +----------------------+---------------------+--------------+------------+----------------+
 
 
@@ -125,6 +129,8 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_setting
 quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=/home/pedro/ProjetoAltera/Complemento2/simulation/qsim/ Complemento2 -c Complemento2
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Complemento2 -c Complemento2 --vector_source=/home/pedro/ProjetoAltera/Complemento2/Waveform.vwf --testbench_file=/home/pedro/ProjetoAltera/Complemento2/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=/home/pedro/ProjetoAltera/Complemento2/simulation/qsim/ Complemento2 -c Complemento2
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Complemento2 -c Complemento2 --vector_source=/home/alunoic/projectNibble/Complemento2/Waveform.vwf --testbench_file=/home/alunoic/projectNibble/Complemento2/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=/home/alunoic/projectNibble/Complemento2/simulation/qsim/ Complemento2 -c Complemento2
 
 
 

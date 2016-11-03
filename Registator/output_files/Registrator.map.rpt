@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Registrator
-Wed Nov  2 21:20:07 2016
+Thu Nov  3 11:47:55 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov  2 21:20:07 2016       ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov  3 11:47:55 2016       ;
 ; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                   ; Registrator                                 ;
-; Top-level Entity Name           ; dffe8                                       ;
+; Top-level Entity Name           ; dffe3                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 8                                           ;
-; Total pins                      ; 20                                          ;
+; Total registers                 ; 3                                           ;
+; Total pins                      ; 10                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -69,7 +69,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; dffe8              ; Registrator        ;
+; Top-level entity name                                                           ; dffe3              ; Registrator        ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -157,46 +157,45 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 2      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                   ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
-; dffe4.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/projectNibble/Registator/dffe4.bdf ;         ;
-; dffe8.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/projectNibble/Registator/dffe8.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                     ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
+; dffe3.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/alunoic/projectNibble/Registator/dffe3.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                       ;
-+---------------------------------------------+---------------------+
-; Resource                                    ; Usage               ;
-+---------------------------------------------+---------------------+
-; Estimate of Logic utilization (ALMs needed) ; 9                   ;
-;                                             ;                     ;
-; Combinational ALUT usage for logic          ; 18                  ;
-;     -- 7 input functions                    ; 0                   ;
-;     -- 6 input functions                    ; 0                   ;
-;     -- 5 input functions                    ; 0                   ;
-;     -- 4 input functions                    ; 8                   ;
-;     -- <=3 input functions                  ; 10                  ;
-;                                             ;                     ;
-; Dedicated logic registers                   ; 8                   ;
-;                                             ;                     ;
-; I/O pins                                    ; 20                  ;
-;                                             ;                     ;
-; Total DSP Blocks                            ; 0                   ;
-;                                             ;                     ;
-; Maximum fan-out node                        ; dffe4:inst1|inst2~1 ;
-; Maximum fan-out                             ; 17                  ;
-; Total fan-out                               ; 113                 ;
-; Average fan-out                             ; 1.71                ;
-+---------------------------------------------+---------------------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Estimate of Logic utilization (ALMs needed) ; 4       ;
+;                                             ;         ;
+; Combinational ALUT usage for logic          ; 8       ;
+;     -- 7 input functions                    ; 0       ;
+;     -- 6 input functions                    ; 0       ;
+;     -- 5 input functions                    ; 0       ;
+;     -- 4 input functions                    ; 3       ;
+;     -- <=3 input functions                  ; 5       ;
+;                                             ;         ;
+; Dedicated logic registers                   ; 3       ;
+;                                             ;         ;
+; I/O pins                                    ; 10      ;
+;                                             ;         ;
+; Total DSP Blocks                            ; 0       ;
+;                                             ;         ;
+; Maximum fan-out node                        ; inst1~1 ;
+; Maximum fan-out                             ; 7       ;
+; Total fan-out                               ; 48      ;
+; Average fan-out                             ; 1.55    ;
++---------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -204,9 +203,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |dffe8                     ; 18 (0)            ; 8 (0)        ; 0                 ; 0          ; 20   ; 0            ; |dffe8              ; dffe8       ; work         ;
-;    |dffe4:inst1|           ; 10 (10)           ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |dffe8|dffe4:inst1  ; dffe4       ; work         ;
-;    |dffe4:inst|            ; 8 (8)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |dffe8|dffe4:inst   ; dffe4       ; work         ;
+; |dffe3                     ; 8 (8)             ; 3 (3)        ; 0                 ; 0          ; 10   ; 0            ; |dffe3              ; dffe3       ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -216,12 +213,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 3     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 3     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Clock Enable       ; 3     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -231,17 +228,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 8                           ;
-;     ENA CLR           ; 8                           ;
-; arriav_lcell_comb     ; 18                          ;
-;     normal            ; 18                          ;
-;         2 data inputs ; 9                           ;
+; arriav_ff             ; 3                           ;
+;     ENA CLR           ; 3                           ;
+; arriav_lcell_comb     ; 8                           ;
+;     normal            ; 8                           ;
+;         2 data inputs ; 4                           ;
 ;         3 data inputs ; 1                           ;
-;         4 data inputs ; 8                           ;
-; boundary_port         ; 20                          ;
+;         4 data inputs ; 3                           ;
+; boundary_port         ; 10                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.95                        ;
+; Average LUT depth     ; 0.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -260,35 +257,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Wed Nov  2 21:19:50 2016
+    Info: Processing started: Thu Nov  3 11:47:27 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Registrator -c Registrator
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file dffe4.bdf
     Info (12023): Found entity 1: dffe4
 Info (12021): Found 1 design units, including 1 entities, in source file dffe8.bdf
     Info (12023): Found entity 1: dffe8
-Info (12127): Elaborating entity "dffe8" for the top level hierarchy
-Info (12128): Elaborating entity "dffe4" for hierarchy "dffe4:inst"
+Info (12021): Found 1 design units, including 1 entities, in source file dffe3.bdf
+    Info (12023): Found entity 1: dffe3
+Info (12021): Found 1 design units, including 1 entities, in source file Registrator.bdf
+    Info (12023): Found entity 1: Registrator
+Info (12021): Found 1 design units, including 1 entities, in source file dffe5.bdf
+    Info (12023): Found entity 1: dffe5
+Info (12127): Elaborating entity "dffe3" for the top level hierarchy
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "dffe4:inst1|inst2" is converted into an equivalent circuit using register "dffe4:inst1|inst2~_emulated" and latch "dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe4:inst1|inst1" is converted into an equivalent circuit using register "dffe4:inst1|inst1~_emulated" and latch "dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe4:inst1|inst" is converted into an equivalent circuit using register "dffe4:inst1|inst~_emulated" and latch "dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe4:inst1|inst3" is converted into an equivalent circuit using register "dffe4:inst1|inst3~_emulated" and latch "dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe4:inst|inst2" is converted into an equivalent circuit using register "dffe4:inst|inst2~_emulated" and latch "dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe4:inst|inst1" is converted into an equivalent circuit using register "dffe4:inst|inst1~_emulated" and latch "dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe4:inst|inst" is converted into an equivalent circuit using register "dffe4:inst|inst~_emulated" and latch "dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe4:inst|inst3" is converted into an equivalent circuit using register "dffe4:inst|inst3~_emulated" and latch "dffe4:inst1|inst2~1"
+    Warning (13310): Register "inst1" is converted into an equivalent circuit using register "inst1~_emulated" and latch "inst1~1"
+    Warning (13310): Register "inst" is converted into an equivalent circuit using register "inst~_emulated" and latch "inst1~1"
+    Warning (13310): Register "inst3" is converted into an equivalent circuit using register "inst3~_emulated" and latch "inst1~1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 18 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 1284 megabytes
-    Info: Processing ended: Wed Nov  2 21:20:07 2016
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:40
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 1280 megabytes
+    Info: Processing ended: Thu Nov  3 11:47:55 2016
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:31
 
 

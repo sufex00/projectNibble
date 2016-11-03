@@ -4,26 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Q[7]",
-					"strict" : false
-				},
-				{
-					"name" : "Q[6]",
-					"strict" : false
-				},
-				{
-					"name" : "Q[5]",
-					"strict" : false
-				},
-				{
-					"name" : "Q[4]",
-					"strict" : false
-				},
-				{
-					"name" : "Q[3]",
-					"strict" : false
-				},
-				{
 					"name" : "Q[2]",
 					"strict" : false
 				},
@@ -44,7 +24,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "D[7]",
+					"name" : "D[2]",
 					"strict" : false
 				},
 				{
@@ -53,26 +33,6 @@
 				},
 				{
 					"name" : "ENA",
-					"strict" : false
-				},
-				{
-					"name" : "D[6]",
-					"strict" : false
-				},
-				{
-					"name" : "D[5]",
-					"strict" : false
-				},
-				{
-					"name" : "D[4]",
-					"strict" : false
-				},
-				{
-					"name" : "D[3]",
-					"strict" : false
-				},
-				{
-					"name" : "D[2]",
 					"strict" : false
 				},
 				{

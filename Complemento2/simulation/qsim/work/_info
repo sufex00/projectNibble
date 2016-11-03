@@ -49,13 +49,13 @@ Z15 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
 R10
 vComplemento2
-Z16 !s110 1478135193
+Z16 !s110 1478180759
 !i10b 1
 !s100 ^AzCWZ5z0BjHkFU9KF8bn1
 I>2YYl7IU9BCKPkOdnH`F^3
 R2
-R0
-w1478135192
+Z17 d/home/alunoic/projectNibble/Complemento2/simulation/qsim
+w1478180756
 R3
 R4
 R5
@@ -63,7 +63,7 @@ R6
 r1
 !s85 0
 31
-Z17 !s108 1478135193.000000
+!s108 1478180758.000000
 R8
 R9
 !i113 1
@@ -75,8 +75,8 @@ R16
 !s100 c[NS3^onfKJAVnIfoSk9I2
 IQKnV:AbnPb`Wb>^IBNW?e0
 R2
-R0
-w1478135191
+R17
+w1478180754
 R11
 R12
 R13
@@ -84,7 +84,7 @@ R6
 r1
 !s85 0
 31
-R17
+!s108 1478180759.000000
 R14
 R15
 !i113 1

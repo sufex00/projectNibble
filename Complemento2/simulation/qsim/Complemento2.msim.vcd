@@ -3,7 +3,7 @@ $comment
 		vcd file Complemento2.msim.vcd -direction
 $end
 $date
-	Wed Nov  2 22:06:33 2016
+	Thu Nov  3 10:46:00 2016
 $end
 $version
 	ModelSim Version 10.4d
