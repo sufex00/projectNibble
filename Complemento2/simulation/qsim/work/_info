@@ -1,0 +1,132 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pedro/ProjetoAltera/Complemento2/simulation/qsim
+vadd1bit
+Z1 !s110 1477570426
+!i10b 1
+!s100 [PC3hffmV>akdIIm`K4`70
+IM^>IDdaWSzB3[BYkKUK]]0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1477570425
+Z3 8Complemento2.vo
+Z4 FComplemento2.vo
+Z5 L0 32
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1477570426.000000
+Z8 !s107 Complemento2.vo|
+Z9 !s90 -work|work|Complemento2.vo|
+!i113 1
+Z10 o-work work
+vadd1bit_vlg_vec_tst
+R1
+!i10b 1
+!s100 GZmM3BlV3G6M5eg2lf2m_2
+ImkaEZoDL6d<N70VCmII9z3
+R2
+R0
+w1477570423
+Z11 8Waveform.vwf.vt
+Z12 FWaveform.vwf.vt
+Z13 L0 30
+R6
+r1
+!s85 0
+31
+R7
+Z14 !s107 Waveform.vwf.vt|
+Z15 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+vComplemento2
+Z16 !s110 1478135193
+!i10b 1
+!s100 ^AzCWZ5z0BjHkFU9KF8bn1
+I>2YYl7IU9BCKPkOdnH`F^3
+R2
+R0
+w1478135192
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z17 !s108 1478135193.000000
+R8
+R9
+!i113 1
+R10
+n@complemento2
+vComplemento2_vlg_vec_tst
+R16
+!i10b 1
+!s100 c[NS3^onfKJAVnIfoSk9I2
+IQKnV:AbnPb`Wb>^IBNW?e0
+R2
+R0
+w1478135191
+R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R17
+R14
+R15
+!i113 1
+R10
+n@complemento2_vlg_vec_tst
+vnot8
+Z18 !s110 1477570962
+!i10b 1
+!s100 D5163Ym78MDNo1gHkSVaa1
+Ih[a22oR>eDLGkIn7h9V8T1
+R2
+R0
+w1477570961
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z19 !s108 1477570962.000000
+R8
+R9
+!i113 1
+R10
+vnot8_vlg_vec_tst
+R18
+!i10b 1
+!s100 <<XkMoTA9ckH0:<MaiKLm3
+IK3iHMj=Y<[H:07B9jTiNP0
+R2
+R0
+w1477570960
+R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R19
+R14
+R15
+!i113 1
+R10
