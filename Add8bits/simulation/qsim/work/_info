@@ -16,18 +16,18 @@ I^1I`dofQ=<MYgOan6OoWa2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1478134134
-8Add8its.vo
-FAdd8its.vo
-L0 32
-Z3 OV;L;10.4d;61
+Z3 8Add8its.vo
+Z4 FAdd8its.vo
+Z5 L0 32
+Z6 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z4 !s108 1478134137.000000
-!s107 Add8its.vo|
-!s90 -work|work|Add8its.vo|
+Z7 !s108 1478134137.000000
+Z8 !s107 Add8its.vo|
+Z9 !s90 -work|work|Add8its.vo|
 !i113 1
-Z5 o-work work
+Z10 o-work work
 n@add8bits
 vAdd8bits_vlg_vec_tst
 R1
@@ -37,16 +37,100 @@ I_CzA`_[0A6B<mUVTRe@BC3
 R2
 R0
 w1478134132
-8Waveform.vwf.vt
-FWaveform.vwf.vt
-L0 30
-R3
+Z11 8Waveform.vwf.vt
+Z12 FWaveform.vwf.vt
+Z13 L0 30
+R6
 r1
 !s85 0
 31
-R4
-!s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
+R7
+Z14 !s107 Waveform.vwf.vt|
+Z15 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R5
+R10
 n@add8bits_vlg_vec_tst
+vSuc5bitR
+Z16 !s110 1478403393
+!i10b 1
+!s100 <EHLkhQ;jeoRhfJNIJGLR0
+I;laPl_TeC5aCUQJbT0?0O2
+R2
+Z17 d/home/pedro/projectNibble/Add8bits/simulation/qsim
+w1478403392
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z18 !s108 1478403393.000000
+R8
+R9
+!i113 1
+R10
+n@suc5bit@r
+vSuc5bitR_vlg_vec_tst
+R16
+!i10b 1
+!s100 E`]FfDm]DW5?KSfegOjUa2
+Io_CZA^7JacN77dO3`<0>53
+R2
+R17
+w1478403391
+R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R18
+R14
+R15
+!i113 1
+R10
+n@suc5bit@r_vlg_vec_tst
+vSuc5bits
+Z19 !s110 1478402026
+!i10b 1
+!s100 29NNX@iKcSLb435m_ZDSB3
+I79;S^bc6J77KzUI97zN4S1
+R2
+R17
+w1478402025
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1478402026.000000
+R8
+R9
+!i113 1
+R10
+n@suc5bits
+vSuc5bits_vlg_vec_tst
+R19
+!i10b 1
+!s100 ck]WmgD8MWh_FOa10ndEz3
+Ig^LAjT>8EDFi=eLG_;aP60
+R2
+R17
+w1478402024
+R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R20
+R14
+R15
+!i113 1
+R10
+n@suc5bits_vlg_vec_tst

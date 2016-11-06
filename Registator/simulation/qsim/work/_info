@@ -8,163 +8,203 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/pedro/projectNibble/Registator/simulation/qsim
-vdffe3
-Z1 !s110 1478184592
+vdffe24
+Z1 !s110 1478398905
 !i10b 1
-!s100 zdUP]3S;<W3XNZ3W@c=Y^2
-I;E8G35]Mg;H1MeS`Qnm>20
+!s100 gkO>8QR9JejK<Sk>^:mPJ0
+I9igT6Ki9[e9SZ7haSY>FQ1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 d/home/alunoic/projectNibble/Registator/simulation/qsim
-w1478184591
-Z4 8Registrator.vo
-Z5 FRegistrator.vo
-Z6 L0 32
-Z7 OV;L;10.4d;61
+R0
+w1478398904
+Z3 8Registrator.vo
+Z4 FRegistrator.vo
+Z5 L0 32
+Z6 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z8 !s108 1478184592.000000
-Z9 !s107 Registrator.vo|
-Z10 !s90 -work|work|Registrator.vo|
+Z7 !s108 1478398905.000000
+Z8 !s107 Registrator.vo|
+Z9 !s90 -work|work|Registrator.vo|
 !i113 1
-Z11 o-work work
-vdffe3_vlg_vec_tst
+Z10 o-work work
+vdffe24_vlg_vec_tst
 R1
+!i10b 1
+!s100 B9KmLRMY4]?R?>9JF>]d90
+Ig^0<cQ5TSGcQakLcKR_VZ3
+R2
+R0
+w1478398903
+Z11 8Waveform.vwf.vt
+Z12 FWaveform.vwf.vt
+Z13 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+Z14 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+vdffe3
+Z15 !s110 1478184592
+!i10b 1
+!s100 zdUP]3S;<W3XNZ3W@c=Y^2
+I;E8G35]Mg;H1MeS`Qnm>20
+R2
+Z16 d/home/alunoic/projectNibble/Registator/simulation/qsim
+w1478184591
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z17 !s108 1478184592.000000
+R8
+R9
+!i113 1
+R10
+vdffe3_vlg_vec_tst
+R15
 !i10b 1
 !s100 ;E9Y3k3I`QL5PKmRoJiG11
 IQMe805[KG>=jZ:<iiGE^=1
 R2
-R3
+R16
 w1478184590
-Z12 8Waveform.vwf.vt
-Z13 FWaveform.vwf.vt
-Z14 L0 30
-R7
+R11
+R12
+R13
+R6
 r1
 !s85 0
 31
-R8
+R17
 !s107 Waveform.vwf.vt|
-Z15 !s90 -work|work|Waveform.vwf.vt|
+R14
 !i113 1
-R11
+R10
 vdffe4
-Z16 !s110 1478131209
+Z18 !s110 1478131209
 !i10b 1
 !s100 h;ZUSzMbRHO7OITBnc0<[1
 ID<RH2<nXdd72S;3c>8>803
 R2
 R0
 w1478131209
+R3
 R4
 R5
 R6
-R7
 r1
 !s85 0
 31
-Z17 !s108 1478131209.000000
+Z19 !s108 1478131209.000000
+R8
 R9
-R10
 !i113 1
-R11
+R10
 vdffe4_vlg_vec_tst
-R16
+R18
 !i10b 1
 !s100 @0ebE<F[hPo`Z54ORUlE@3
 I@EKKEYVB=A47ZW>:C7e^P1
 R2
 R0
 w1478131207
+R11
 R12
 R13
-R14
-R7
-r1
-!s85 0
-31
-R17
-!s107 Waveform.vwf.vt|
-R15
-!i113 1
-R11
-vdffe5
-Z18 !s110 1478184182
-!i10b 1
-!s100 Oeebz8CL2:6DTC>AjaPOi1
-IFF59_zkIEEC=:<_ka2Q]M2
-R2
-R3
-w1478184181
-R4
-R5
 R6
-R7
-r1
-!s85 0
-31
-Z19 !s108 1478184182.000000
-R9
-R10
-!i113 1
-R11
-vdffe5_vlg_vec_tst
-R18
-!i10b 1
-!s100 boP=hihhS3@2?JD2>8FaU3
-I:JaaYPo[>0`3O_f`YTEif1
-R2
-R3
-w1478184179
-R12
-R13
-R14
-R7
 r1
 !s85 0
 31
 R19
 !s107 Waveform.vwf.vt|
-R15
+R14
 !i113 1
+R10
+vdffe5
+Z20 !s110 1478184182
+!i10b 1
+!s100 Oeebz8CL2:6DTC>AjaPOi1
+IFF59_zkIEEC=:<_ka2Q]M2
+R2
+R16
+w1478184181
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z21 !s108 1478184182.000000
+R8
+R9
+!i113 1
+R10
+vdffe5_vlg_vec_tst
+R20
+!i10b 1
+!s100 boP=hihhS3@2?JD2>8FaU3
+I:JaaYPo[>0`3O_f`YTEif1
+R2
+R16
+w1478184179
 R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R21
+!s107 Waveform.vwf.vt|
+R14
+!i113 1
+R10
 vdffe8
-Z20 !s110 1478132643
+Z22 !s110 1478132643
 !i10b 1
 !s100 5OXTnh?CC8V9OVRj]JjfO2
 Ik;XI>M>z0jTF8gK5mJY4;3
 R2
 R0
 w1478132642
+R3
 R4
 R5
 R6
-R7
 r1
 !s85 0
 31
-Z21 !s108 1478132643.000000
+Z23 !s108 1478132643.000000
+R8
 R9
-R10
 !i113 1
-R11
+R10
 vdffe8_vlg_vec_tst
-R20
+R22
 !i10b 1
 !s100 TT6M8_R<fP?kK@@C4J?V>0
 IXODYLn7NJGJ;Cd1NVzX3`2
 R2
 R0
 w1478132641
+R11
 R12
 R13
-R14
-R7
+R6
 r1
 !s85 0
 31
-R21
+R23
 !s107 Waveform.vwf.vt|
-R15
+R14
 !i113 1
-R11
+R10

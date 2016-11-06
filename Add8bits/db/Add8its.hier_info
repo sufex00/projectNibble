@@ -1,32 +1,35 @@
-|Add8bits
-OverFlow <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => Add18its:inst2.A
-A[1] => Add18its:inst.A
-A[2] => Add18its:inst30.A
-A[3] => Add18its:inst4.A
-A[4] => Add18its:inst5.A
-A[5] => Add18its:inst6.A
-A[6] => Add18its:inst7.A
-A[7] => Add18its:inst8.A
-B[0] => Add18its:inst2.B
-B[1] => Add18its:inst.B
-B[2] => Add18its:inst30.B
-B[3] => Add18its:inst4.B
-B[4] => Add18its:inst5.B
-B[5] => Add18its:inst6.B
-B[6] => Add18its:inst7.B
-B[7] => Add18its:inst8.B
+|Suc5bitR
+Y[0] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Suc5bits:inst.A[0]
+A[1] => Suc5bits:inst.A[1]
+A[2] => Suc5bits:inst.A[2]
+A[3] => Suc5bits:inst.A[3]
+A[4] => Suc5bits:inst.A[4]
+A[5] => Suc5bits:inst.A[5]
+
+
+|Suc5bitR|Suc5bits:inst
+Restart <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 S[0] <= Add18its:inst2.S
 S[1] <= Add18its:inst.S
 S[2] <= Add18its:inst30.S
 S[3] <= Add18its:inst4.S
 S[4] <= Add18its:inst5.S
 S[5] <= Add18its:inst6.S
-S[6] <= Add18its:inst7.S
-S[7] <= Add18its:inst8.S
+A[0] => Add18its:inst2.A
+A[1] => Add18its:inst.A
+A[2] => Add18its:inst30.A
+A[3] => Add18its:inst4.A
+A[4] => Add18its:inst5.A
+A[5] => Add18its:inst6.A
 
 
-|Add8bits|Add18its:inst8
+|Suc5bitR|Suc5bits:inst|Add18its:inst6
 S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN0
@@ -40,7 +43,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Add8bits|Add18its:inst7
+|Suc5bitR|Suc5bits:inst|Add18its:inst5
 S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN0
@@ -54,7 +57,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Add8bits|Add18its:inst6
+|Suc5bitR|Suc5bits:inst|Add18its:inst4
 S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN0
@@ -68,7 +71,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Add8bits|Add18its:inst5
+|Suc5bitR|Suc5bits:inst|Add18its:inst30
 S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN0
@@ -82,7 +85,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Add8bits|Add18its:inst4
+|Suc5bitR|Suc5bits:inst|Add18its:inst
 S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN0
@@ -96,35 +99,7 @@ Cin => inst4.IN1
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Add8bits|Add18its:inst30
-S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-B => inst2.IN0
-B => inst.IN0
-B => inst1.IN0
-A => inst2.IN1
-A => inst4.IN0
-A => inst1.IN1
-Cin => inst3.IN1
-Cin => inst.IN1
-Cin => inst4.IN1
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Add8bits|Add18its:inst
-S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-B => inst2.IN0
-B => inst.IN0
-B => inst1.IN0
-A => inst2.IN1
-A => inst4.IN0
-A => inst1.IN1
-Cin => inst3.IN1
-Cin => inst.IN1
-Cin => inst4.IN1
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Add8bits|Add18its:inst2
+|Suc5bitR|Suc5bits:inst|Add18its:inst2
 S <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 B => inst2.IN0
 B => inst.IN0

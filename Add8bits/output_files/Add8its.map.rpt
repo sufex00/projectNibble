@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Add8its
-Wed Nov  2 21:55:24 2016
+Sun Nov  6 00:34:58 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov  2 21:55:24 2016       ;
+; Analysis & Synthesis Status     ; Successful - Sun Nov  6 00:34:58 2016       ;
 ; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                   ; Add8its                                     ;
-; Top-level Entity Name           ; Add8bits                                    ;
+; Top-level Entity Name           ; Suc5bitR                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 25                                          ;
+; Total pins                      ; 12                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -69,7 +69,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Add8bits           ; Add8its            ;
+; Top-level entity name                                                           ; Suc5bitR           ; Add8its            ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -167,53 +167,46 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                    ; Library ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------+---------+
-; Add18its.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/ProjetoAltera/Add8bits/Add18its.bdf ;         ;
-; Add8bits.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/ProjetoAltera/Add8bits/Add8bits.bdf ;         ;
+; Add18its.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/projectNibble/Add8bits/Add18its.bdf ;         ;
+; Suc5bits.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/projectNibble/Add8bits/Suc5bits.bdf ;         ;
+; Suc5bitR.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/projectNibble/Add8bits/Suc5bitR.bdf ;         ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                           ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 10                      ;
-;                                             ;                         ;
-; Combinational ALUT usage for logic          ; 14                      ;
-;     -- 7 input functions                    ; 0                       ;
-;     -- 6 input functions                    ; 6                       ;
-;     -- 5 input functions                    ; 1                       ;
-;     -- 4 input functions                    ; 2                       ;
-;     -- <=3 input functions                  ; 5                       ;
-;                                             ;                         ;
-; Dedicated logic registers                   ; 0                       ;
-;                                             ;                         ;
-; I/O pins                                    ; 25                      ;
-;                                             ;                         ;
-; Total DSP Blocks                            ; 0                       ;
-;                                             ;                         ;
-; Maximum fan-out node                        ; Add18its:inst30|inst6~0 ;
-; Maximum fan-out                             ; 4                       ;
-; Total fan-out                               ; 94                      ;
-; Average fan-out                             ; 1.47                    ;
-+---------------------------------------------+-------------------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 4          ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 6          ;
+;     -- 7 input functions                    ; 0          ;
+;     -- 6 input functions                    ; 1          ;
+;     -- 5 input functions                    ; 5          ;
+;     -- 4 input functions                    ; 0          ;
+;     -- <=3 input functions                  ; 0          ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 12         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; A[0]~input ;
+; Maximum fan-out                             ; 6          ;
+; Total fan-out                               ; 49         ;
+; Average fan-out                             ; 1.63       ;
++---------------------------------------------+------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                           ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Entity Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------+-------------+--------------+
-; |Add8bits                  ; 14 (1)            ; 0 (0)        ; 0                 ; 0          ; 25   ; 0            ; |Add8bits                 ; Add8bits    ; work         ;
-;    |Add18its:inst2|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Add8bits|Add18its:inst2  ; Add18its    ; work         ;
-;    |Add18its:inst30|       ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Add8bits|Add18its:inst30 ; Add18its    ; work         ;
-;    |Add18its:inst4|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Add8bits|Add18its:inst4  ; Add18its    ; work         ;
-;    |Add18its:inst5|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Add8bits|Add18its:inst5  ; Add18its    ; work         ;
-;    |Add18its:inst6|        ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Add8bits|Add18its:inst6  ; Add18its    ; work         ;
-;    |Add18its:inst7|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Add8bits|Add18its:inst7  ; Add18its    ; work         ;
-;    |Add18its:inst8|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Add8bits|Add18its:inst8  ; Add18its    ; work         ;
-;    |Add18its:inst|         ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |Add8bits|Add18its:inst   ; Add18its    ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                     ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |Suc5bitR                  ; 6 (6)             ; 0 (0)        ; 0                 ; 0          ; 12   ; 0            ; |Suc5bitR           ; Suc5bitR    ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -237,17 +230,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 14                          ;
-;     normal            ; 14                          ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 2                           ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 6                           ;
-; boundary_port         ; 25                          ;
+; arriav_lcell_comb     ; 7                           ;
+;     normal            ; 7                           ;
+;         1 data inputs ; 1                           ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 1                           ;
+; boundary_port         ; 12                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.23                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.54                        ;
 +-----------------------+-----------------------------+
 
 
@@ -266,26 +257,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Wed Nov  2 21:55:07 2016
+    Info: Processing started: Sun Nov  6 00:34:40 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Add8its -c Add8its
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file Add18its.bdf
     Info (12023): Found entity 1: Add18its
 Info (12021): Found 1 design units, including 1 entities, in source file Add8bits.bdf
     Info (12023): Found entity 1: Add8bits
-Info (12127): Elaborating entity "Add8bits" for the top level hierarchy
-Info (12128): Elaborating entity "Add18its" for hierarchy "Add18its:inst8"
+Info (12021): Found 1 design units, including 1 entities, in source file Suc5bits.bdf
+    Info (12023): Found entity 1: Suc5bits
+Info (12021): Found 1 design units, including 1 entities, in source file Suc5bitR.bdf
+    Info (12023): Found entity 1: Suc5bitR
+Info (12127): Elaborating entity "Suc5bitR" for the top level hierarchy
+Info (12128): Elaborating entity "Suc5bits" for hierarchy "Suc5bits:inst"
+Info (12128): Elaborating entity "Add18its" for hierarchy "Suc5bits:inst|Add18its:inst6"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 14 logic cells
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 6 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1285 megabytes
-    Info: Processing ended: Wed Nov  2 21:55:24 2016
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Peak virtual memory: 1287 megabytes
+    Info: Processing ended: Sun Nov  6 00:34:58 2016
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:40
 
 
