@@ -1,10 +1,19 @@
 |CentralControl
-S[0] <= dffe3:inst1.Q[0]
-S[1] <= dffe3:inst1.Q[1]
-S[2] <= dffe3:inst1.Q[2]
+mux_X <= OP[1].DB_MAX_OUTPUT_PORT_TYPE
+OP[0] => mux_Y.DATAIN
+OP[0] => inst4.IN0
+OP[0] => State:inst.OP[0]
+OP[1] => mux_X.DATAIN
+OP[1] => State:inst.OP[1]
+OP[2] => State:inst.OP[2]
+mux_Y <= OP[0].DB_MAX_OUTPUT_PORT_TYPE
+out_we <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 ENA => dffe3:inst1.ENA
 CLRN => dffe3:inst1.CLRN
 CLK => dffe3:inst1.CLK
+Sai[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Sai[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Sai[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CentralControl|dffe3:inst1
@@ -27,17 +36,22 @@ ENA => inst1.ENA
 
 
 |CentralControl|State:inst
-S[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S[0] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 I[0] => inst3.IN0
 I[0] => inst9.IN0
 I[0] => inst4.IN0
+I[0] => inst12.IN1
 I[1] => inst9.IN1
 I[1] => inst2.IN0
 I[1] => inst4.IN1
+I[1] => inst12.IN2
 I[2] => inst17.IN1
 I[2] => inst.IN0
 I[2] => inst7.IN1
+OP[0] => inst13.IN0
+OP[1] => ~NO_FANOUT~
+OP[2] => ~NO_FANOUT~
 
 
