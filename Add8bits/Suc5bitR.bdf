@@ -22,7 +22,7 @@ agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 200 -104 216 64)
+	(rect 200 -312 216 -144)
 	(text "INPUT" (rect 6 125 16 166)(font "Arial" (font_size 6))(vertical))
 	(text "A[5..0]" (rect 6 5 17 63)(font "Arial" )(vertical))
 	(pt 8 168)
@@ -276,16 +276,6 @@ agreement for further details.
 	)
 )
 (connector
-	(pt 280 192)
-	(pt 208 192)
-	(bus)
-)
-(connector
-	(pt 208 192)
-	(pt 208 64)
-	(bus)
-)
-(connector
 	(pt 880 184)
 	(pt 832 184)
 )
@@ -481,6 +471,16 @@ agreement for further details.
 	(text "S[5..0]" (rect 496 176 553 187)(font "Liberation Sans" ))
 	(pt 496 192)
 	(pt 528 192)
+	(bus)
+)
+(connector
+	(pt 280 192)
+	(pt 208 192)
+	(bus)
+)
+(connector
+	(pt 208 -144)
+	(pt 208 192)
 	(bus)
 )
 (junction (pt 792 208))

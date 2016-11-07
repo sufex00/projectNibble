@@ -1,0 +1,29 @@
+# do Mux.do
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:45:38 on Nov 06,2016
+# vlog -work work Mux.vo 
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 14:45:38 on Nov 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:45:38 on Nov 06,2016
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module test_vlg_vec_tst
+# 
+# Top level modules:
+# 	test_vlg_vec_tst
+# End time: 14:45:38 on Nov 06,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.test_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 14:45:38 on Nov 06,2016
+# Loading work.test_vlg_vec_tst
+# Loading work.test
+# ** Note: $stop    : Waveform.vwf.vt(49)
+#    Time: 1 us  Iteration: 0  Instance: /test_vlg_vec_tst
+# Break in Module test_vlg_vec_tst at Waveform.vwf.vt line 49
+# Stopped at Waveform.vwf.vt line 49
+# End time: 14:45:40 on Nov 06,2016, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

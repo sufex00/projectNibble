@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pedro/projectNibble/Memory/simulation/qsim
+vsingle_port_ram
+Z1 !s110 1478440706
+!i10b 1
+!s100 @nneSGz?XX46nCHF>44Ii2
+IC`ln0diBI1DBk@nX4ckWV2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1478440705
+Z3 8Memory.vo
+Z4 FMemory.vo
+Z5 L0 32
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1478440706.000000
+Z8 !s107 Memory.vo|
+Z9 !s90 -work|work|Memory.vo|
+!i113 1
+Z10 o-work work
+vsingle_port_ram_vlg_vec_tst
+R1
+!i10b 1
+!s100 gDVAR]ZhcFOo6lGEPUge42
+IBKa`RX^TA0dIb3IDJQ_QO1
+R2
+R0
+w1478440704
+Z11 8Waveform.vwf.vt
+Z12 FWaveform.vwf.vt
+Z13 L0 30
+R6
+r1
+!s85 0
+31
+R7
+Z14 !s107 Waveform.vwf.vt|
+Z15 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+vsingle_port_rom
+Z16 !s110 1478440746
+!i10b 1
+!s100 :ZDMPb4Hd`EIcQ=AeDAdJ0
+IKKUDo3ee3?kKBMVSYO0G93
+R2
+R0
+w1478440745
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z17 !s108 1478440746.000000
+R8
+R9
+!i113 1
+R10
+vsingle_port_rom_vlg_vec_tst
+R16
+!i10b 1
+!s100 9@FmbIX4dm=CS91Y=RXm@0
+Ibl@@[c[_6Q>4;hIjUMS>M1
+R2
+R0
+w1478440744
+R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R17
+R14
+R15
+!i113 1
+R10
+vtest
+Z18 !s110 1478442596
+!i10b 1
+!s100 1XL]=8o1?FR:5cih]_HPm2
+IhYIA1ML`:0o@R1__DidQR3
+R2
+R0
+w1478442595
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z19 !s108 1478442596.000000
+R8
+R9
+!i113 1
+R10
+vtest_vlg_vec_tst
+R18
+!i10b 1
+!s100 9]ob_dmmBnSe49Vm:l20z1
+I;8QZ=9Dnag7NB`^aG:LCi3
+R2
+R0
+w1478442594
+R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R19
+R14
+R15
+!i113 1
+R10

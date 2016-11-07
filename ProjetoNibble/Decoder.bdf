@@ -1,0 +1,169 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 320 240 336 424)
+	(text "INPUT" (rect 6 141 16 182)(font "Arial" (font_size 6))(vertical))
+	(text "INST[23..0]" (rect 5 5 16 95)(font "Arial" )(vertical))
+	(pt 8 184)
+	(drawing
+		(line (pt 4 100)(pt 4 125))
+		(line (pt 12 100)(pt 12 125))
+		(line (pt 8 129)(pt 8 184))
+		(line (pt 4 100)(pt 12 100))
+		(line (pt 12 125)(pt 8 129))
+		(line (pt 4 125)(pt 8 129))
+	)
+	(rotate270)
+	(text "VCC" (rect -1 144 9 168)(font "Arial" (font_size 6))(vertical))
+)
+(pin
+	(output)
+	(rect 600 600 616 776)
+	(text "OUTPUT" (rect 6 1 16 50)(font "Arial" (font_size 6))(vertical))
+	(text "Y[7..0]" (rect 6 89 17 146)(font "Arial" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 8 0)(pt 8 52))
+		(line (pt 12 52)(pt 12 78))
+		(line (pt 4 52)(pt 4 78))
+		(line (pt 4 52)(pt 12 52))
+		(line (pt 12 78)(pt 8 82))
+		(line (pt 8 82)(pt 4 78))
+		(line (pt 4 78)(pt 8 82))
+	)
+	(rotate270)
+)
+(pin
+	(output)
+	(rect 552 600 568 776)
+	(text "OUTPUT" (rect 6 1 16 50)(font "Arial" (font_size 6))(vertical))
+	(text "OP[2..0]" (rect 6 89 17 155)(font "Liberation Sans" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 8 0)(pt 8 52))
+		(line (pt 12 52)(pt 12 78))
+		(line (pt 4 52)(pt 4 78))
+		(line (pt 4 52)(pt 12 52))
+		(line (pt 12 78)(pt 8 82))
+		(line (pt 8 82)(pt 4 78))
+		(line (pt 4 78)(pt 8 82))
+	)
+	(rotate270)
+)
+(pin
+	(output)
+	(rect 648 600 664 776)
+	(text "OUTPUT" (rect 6 1 16 50)(font "Arial" (font_size 6))(vertical))
+	(text "ADDR[4..0]" (rect 7 88 18 170)(font "Liberation Sans" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 8 0)(pt 8 52))
+		(line (pt 12 52)(pt 12 78))
+		(line (pt 4 52)(pt 4 78))
+		(line (pt 4 52)(pt 12 52))
+		(line (pt 12 78)(pt 8 82))
+		(line (pt 8 82)(pt 4 78))
+		(line (pt 4 78)(pt 8 82))
+	)
+	(rotate270)
+)
+(pin
+	(output)
+	(rect 504 600 520 776)
+	(text "OUTPUT" (rect 6 1 16 50)(font "Arial" (font_size 6))(vertical))
+	(text "X[7..0]" (rect 6 89 17 146)(font "Liberation Sans" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 8 0)(pt 8 52))
+		(line (pt 12 52)(pt 12 78))
+		(line (pt 4 52)(pt 4 78))
+		(line (pt 4 52)(pt 12 52))
+		(line (pt 12 78)(pt 8 82))
+		(line (pt 8 82)(pt 4 78))
+		(line (pt 4 78)(pt 8 82))
+	)
+	(rotate270)
+)
+(connector
+	(pt 560 560)
+	(pt 560 600)
+	(bus)
+)
+(connector
+	(pt 608 520)
+	(pt 608 600)
+	(bus)
+)
+(connector
+	(pt 656 480)
+	(pt 656 600)
+	(bus)
+)
+(connector
+	(text "INST[20..16]" (rect 338 464 437 475)(font "Liberation Sans" ))
+	(pt 328 480)
+	(pt 656 480)
+	(bus)
+)
+(connector
+	(text "INST[7..0]" (rect 338 504 420 515)(font "Liberation Sans" ))
+	(pt 328 520)
+	(pt 608 520)
+	(bus)
+)
+(connector
+	(text "INST[23..21]" (rect 338 544 437 555)(font "Liberation Sans" ))
+	(pt 560 560)
+	(pt 328 560)
+	(bus)
+)
+(connector
+	(text "INST[15..8]" (rect 338 584 428 595)(font "Liberation Sans" ))
+	(pt 328 600)
+	(pt 512 600)
+	(bus)
+)
+(connector
+	(pt 328 560)
+	(pt 328 600)
+	(bus)
+)
+(connector
+	(pt 328 520)
+	(pt 328 560)
+	(bus)
+)
+(connector
+	(pt 328 424)
+	(pt 328 480)
+	(bus)
+)
+(connector
+	(pt 328 480)
+	(pt 328 520)
+	(bus)
+)
+(junction (pt 328 520))
+(junction (pt 328 560))
+(junction (pt 328 480))

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Registrator
-Sat Nov  5 23:15:22 2016
+Sun Nov  6 15:34:04 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Nov  5 23:15:22 2016       ;
+; Analysis & Synthesis Status     ; Successful - Sun Nov  6 15:34:04 2016       ;
 ; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                   ; Registrator                                 ;
-; Top-level Entity Name           ; dffe24                                      ;
+; Top-level Entity Name           ; dffe6                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 24                                          ;
-; Total pins                      ; 52                                          ;
+; Total registers                 ; 6                                           ;
+; Total pins                      ; 16                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -69,7 +69,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; dffe24             ; Registrator        ;
+; Top-level entity name                                                           ; dffe6              ; Registrator        ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -162,60 +162,53 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                              ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                    ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------+---------+
-; dffe4.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/projectNibble/Registator/dffe4.bdf  ;         ;
-; dffe8.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/projectNibble/Registator/dffe8.bdf  ;         ;
-; dffe24.bdf                       ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/projectNibble/Registator/dffe24.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
+; dffe4.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/projectNibble/Registator/dffe4.bdf ;         ;
+; dffe5.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/projectNibble/Registator/dffe5.bdf ;         ;
+; dffe6.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/pedro/projectNibble/Registator/dffe6.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                   ;
-+---------------------------------------------+---------------------------------+
-; Resource                                    ; Usage                           ;
-+---------------------------------------------+---------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 25                              ;
-;                                             ;                                 ;
-; Combinational ALUT usage for logic          ; 50                              ;
-;     -- 7 input functions                    ; 0                               ;
-;     -- 6 input functions                    ; 0                               ;
-;     -- 5 input functions                    ; 0                               ;
-;     -- 4 input functions                    ; 24                              ;
-;     -- <=3 input functions                  ; 26                              ;
-;                                             ;                                 ;
-; Dedicated logic registers                   ; 24                              ;
-;                                             ;                                 ;
-; I/O pins                                    ; 52                              ;
-;                                             ;                                 ;
-; Total DSP Blocks                            ; 0                               ;
-;                                             ;                                 ;
-; Maximum fan-out node                        ; dffe8:inst2|dffe4:inst1|inst2~1 ;
-; Maximum fan-out                             ; 49                              ;
-; Total fan-out                               ; 321                             ;
-; Average fan-out                             ; 1.80                            ;
-+---------------------------------------------+---------------------------------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Estimate of Logic utilization (ALMs needed) ; 7       ;
+;                                             ;         ;
+; Combinational ALUT usage for logic          ; 14      ;
+;     -- 7 input functions                    ; 0       ;
+;     -- 6 input functions                    ; 0       ;
+;     -- 5 input functions                    ; 0       ;
+;     -- 4 input functions                    ; 6       ;
+;     -- <=3 input functions                  ; 8       ;
+;                                             ;         ;
+; Dedicated logic registers                   ; 6       ;
+;                                             ;         ;
+; I/O pins                                    ; 16      ;
+;                                             ;         ;
+; Total DSP Blocks                            ; 0       ;
+;                                             ;         ;
+; Maximum fan-out node                        ; inst1~1 ;
+; Maximum fan-out                             ; 13      ;
+; Total fan-out                               ; 87      ;
+; Average fan-out                             ; 1.67    ;
++---------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                 ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Entity Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------+-------------+--------------+
-; |dffe24                    ; 50 (0)            ; 24 (0)       ; 0                 ; 0          ; 52   ; 0            ; |dffe24                         ; dffe24      ; work         ;
-;    |dffe8:inst1|           ; 16 (0)            ; 8 (0)        ; 0                 ; 0          ; 0    ; 0            ; |dffe24|dffe8:inst1             ; dffe8       ; work         ;
-;       |dffe4:inst1|        ; 8 (8)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |dffe24|dffe8:inst1|dffe4:inst1 ; dffe4       ; work         ;
-;       |dffe4:inst|         ; 8 (8)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |dffe24|dffe8:inst1|dffe4:inst  ; dffe4       ; work         ;
-;    |dffe8:inst2|           ; 18 (0)            ; 8 (0)        ; 0                 ; 0          ; 0    ; 0            ; |dffe24|dffe8:inst2             ; dffe8       ; work         ;
-;       |dffe4:inst1|        ; 10 (10)           ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |dffe24|dffe8:inst2|dffe4:inst1 ; dffe4       ; work         ;
-;       |dffe4:inst|         ; 8 (8)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |dffe24|dffe8:inst2|dffe4:inst  ; dffe4       ; work         ;
-;    |dffe8:inst|            ; 16 (0)            ; 8 (0)        ; 0                 ; 0          ; 0    ; 0            ; |dffe24|dffe8:inst              ; dffe8       ; work         ;
-;       |dffe4:inst1|        ; 8 (8)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |dffe24|dffe8:inst|dffe4:inst1  ; dffe4       ; work         ;
-;       |dffe4:inst|         ; 8 (8)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |dffe24|dffe8:inst|dffe4:inst   ; dffe4       ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                              ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Entity Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------+-------------+--------------+
+; |dffe6                     ; 14 (4)            ; 6 (1)        ; 0                 ; 0          ; 16   ; 0            ; |dffe6                       ; dffe6       ; work         ;
+;    |dffe5:inst|            ; 10 (2)            ; 5 (1)        ; 0                 ; 0          ; 0    ; 0            ; |dffe6|dffe5:inst            ; dffe5       ; work         ;
+;       |dffe4:inst|         ; 8 (8)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |dffe6|dffe5:inst|dffe4:inst ; dffe4       ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -224,12 +217,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 24    ;
+; Total registers                              ; 6     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 24    ;
+; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 24    ;
+; Number of registers using Clock Enable       ; 6     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -239,17 +232,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 24                          ;
-;     ENA CLR           ; 24                          ;
-; arriav_lcell_comb     ; 50                          ;
-;     normal            ; 50                          ;
-;         2 data inputs ; 25                          ;
+; arriav_ff             ; 6                           ;
+;     ENA CLR           ; 6                           ;
+; arriav_lcell_comb     ; 14                          ;
+;     normal            ; 14                          ;
+;         2 data inputs ; 7                           ;
 ;         3 data inputs ; 1                           ;
-;         4 data inputs ; 24                          ;
-; boundary_port         ; 52                          ;
+;         4 data inputs ; 6                           ;
+; boundary_port         ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.98                        ;
+; Average LUT depth     ; 0.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -268,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sat Nov  5 23:15:03 2016
+    Info: Processing started: Sun Nov  6 15:33:49 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Registrator -c Registrator
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file dffe4.bdf
@@ -283,45 +276,29 @@ Info (12021): Found 1 design units, including 1 entities, in source file dffe5.b
     Info (12023): Found entity 1: dffe5
 Info (12021): Found 1 design units, including 1 entities, in source file dffe24.bdf
     Info (12023): Found entity 1: dffe24
-Info (12127): Elaborating entity "dffe24" for the top level hierarchy
-Info (12128): Elaborating entity "dffe8" for hierarchy "dffe8:inst"
-Info (12128): Elaborating entity "dffe4" for hierarchy "dffe8:inst|dffe4:inst"
+Info (12021): Found 1 design units, including 1 entities, in source file dffe6.bdf
+    Info (12023): Found entity 1: dffe6
+Info (12127): Elaborating entity "dffe6" for the top level hierarchy
+Info (12128): Elaborating entity "dffe5" for hierarchy "dffe5:inst"
+Info (12128): Elaborating entity "dffe4" for hierarchy "dffe5:inst|dffe4:inst"
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "dffe8:inst2|dffe4:inst1|inst2" is converted into an equivalent circuit using register "dffe8:inst2|dffe4:inst1|inst2~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst2|dffe4:inst1|inst1" is converted into an equivalent circuit using register "dffe8:inst2|dffe4:inst1|inst1~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst2|dffe4:inst1|inst" is converted into an equivalent circuit using register "dffe8:inst2|dffe4:inst1|inst~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst2|dffe4:inst1|inst3" is converted into an equivalent circuit using register "dffe8:inst2|dffe4:inst1|inst3~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst2|dffe4:inst|inst2" is converted into an equivalent circuit using register "dffe8:inst2|dffe4:inst|inst2~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst2|dffe4:inst|inst1" is converted into an equivalent circuit using register "dffe8:inst2|dffe4:inst|inst1~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst2|dffe4:inst|inst" is converted into an equivalent circuit using register "dffe8:inst2|dffe4:inst|inst~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst2|dffe4:inst|inst3" is converted into an equivalent circuit using register "dffe8:inst2|dffe4:inst|inst3~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst1|dffe4:inst1|inst2" is converted into an equivalent circuit using register "dffe8:inst1|dffe4:inst1|inst2~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst1|dffe4:inst1|inst1" is converted into an equivalent circuit using register "dffe8:inst1|dffe4:inst1|inst1~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst1|dffe4:inst1|inst" is converted into an equivalent circuit using register "dffe8:inst1|dffe4:inst1|inst~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst1|dffe4:inst1|inst3" is converted into an equivalent circuit using register "dffe8:inst1|dffe4:inst1|inst3~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst1|dffe4:inst|inst2" is converted into an equivalent circuit using register "dffe8:inst1|dffe4:inst|inst2~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst1|dffe4:inst|inst1" is converted into an equivalent circuit using register "dffe8:inst1|dffe4:inst|inst1~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst1|dffe4:inst|inst" is converted into an equivalent circuit using register "dffe8:inst1|dffe4:inst|inst~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst1|dffe4:inst|inst3" is converted into an equivalent circuit using register "dffe8:inst1|dffe4:inst|inst3~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst|dffe4:inst1|inst2" is converted into an equivalent circuit using register "dffe8:inst|dffe4:inst1|inst2~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst|dffe4:inst1|inst1" is converted into an equivalent circuit using register "dffe8:inst|dffe4:inst1|inst1~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst|dffe4:inst1|inst" is converted into an equivalent circuit using register "dffe8:inst|dffe4:inst1|inst~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst|dffe4:inst1|inst3" is converted into an equivalent circuit using register "dffe8:inst|dffe4:inst1|inst3~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst|dffe4:inst|inst2" is converted into an equivalent circuit using register "dffe8:inst|dffe4:inst|inst2~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst|dffe4:inst|inst1" is converted into an equivalent circuit using register "dffe8:inst|dffe4:inst|inst1~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst|dffe4:inst|inst" is converted into an equivalent circuit using register "dffe8:inst|dffe4:inst|inst~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
-    Warning (13310): Register "dffe8:inst|dffe4:inst|inst3" is converted into an equivalent circuit using register "dffe8:inst|dffe4:inst|inst3~_emulated" and latch "dffe8:inst2|dffe4:inst1|inst2~1"
+    Warning (13310): Register "inst1" is converted into an equivalent circuit using register "inst1~_emulated" and latch "inst1~1"
+    Warning (13310): Register "dffe5:inst|inst1" is converted into an equivalent circuit using register "dffe5:inst|inst1~_emulated" and latch "inst1~1"
+    Warning (13310): Register "dffe5:inst|dffe4:inst|inst2" is converted into an equivalent circuit using register "dffe5:inst|dffe4:inst|inst2~_emulated" and latch "inst1~1"
+    Warning (13310): Register "dffe5:inst|dffe4:inst|inst1" is converted into an equivalent circuit using register "dffe5:inst|dffe4:inst|inst1~_emulated" and latch "inst1~1"
+    Warning (13310): Register "dffe5:inst|dffe4:inst|inst" is converted into an equivalent circuit using register "dffe5:inst|dffe4:inst|inst~_emulated" and latch "inst1~1"
+    Warning (13310): Register "dffe5:inst|dffe4:inst|inst3" is converted into an equivalent circuit using register "dffe5:inst|dffe4:inst|inst3~_emulated" and latch "inst1~1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 102 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 28 input pins
-    Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 50 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 1285 megabytes
-    Info: Processing ended: Sat Nov  5 23:15:22 2016
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:43
+Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 14 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 1286 megabytes
+    Info: Processing ended: Sun Nov  6 15:34:04 2016
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:37
 
 

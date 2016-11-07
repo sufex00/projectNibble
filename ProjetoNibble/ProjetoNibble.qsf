@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CGXFC7C7F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY Complemento2
+set_global_assignment -name TOP_LEVEL_ENTITY CentralControl
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:36:44  OCTOBER 28, 2016"
 set_global_assignment -name LAST_QUARTUS_VERSION 16.0.0
@@ -48,7 +48,27 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE Suc5bitR.bdf
+set_global_assignment -name BDF_FILE dffe5.bdf
+set_global_assignment -name BDF_FILE dffe6.bdf
+set_global_assignment -name BDF_FILE Main.bdf
+set_global_assignment -name BDF_FILE Suc5bits.bdf
+set_global_assignment -name BDF_FILE dffe4.bdf
+set_global_assignment -name BDF_FILE Add18its.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VERILOG_FILE single_port_rom.v
+set_global_assignment -name BDF_FILE Transform5for4.bdf
+set_global_assignment -name BDF_FILE dffe24.bdf
+set_global_assignment -name BDF_FILE dffe8.bdf
+set_global_assignment -name BDF_FILE Decoder.bdf
+set_global_assignment -name BDF_FILE dffe3.bdf
+set_global_assignment -name VERILOG_FILE mux2.v
+set_global_assignment -name BDF_FILE Add8bits.bdf
+set_global_assignment -name BDF_FILE Complemento2.bdf
+set_global_assignment -name VERILOG_FILE single_port_ram.v
+set_global_assignment -name BDF_FILE State.bdf
+set_global_assignment -name BDF_FILE CentralControl.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

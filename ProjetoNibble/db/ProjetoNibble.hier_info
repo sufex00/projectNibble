@@ -1,0 +1,43 @@
+|CentralControl
+S[0] <= dffe3:inst1.Q[0]
+S[1] <= dffe3:inst1.Q[1]
+S[2] <= dffe3:inst1.Q[2]
+ENA => dffe3:inst1.ENA
+CLRN => dffe3:inst1.CLRN
+CLK => dffe3:inst1.CLK
+
+
+|CentralControl|dffe3:inst1
+Q[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+PRN => inst3.PRESET
+PRN => inst.PRESET
+PRN => inst1.PRESET
+CLRN => inst3.ACLR
+CLRN => inst.ACLR
+CLRN => inst1.ACLR
+D[0] => inst3.DATAIN
+D[1] => inst.DATAIN
+D[2] => inst1.DATAIN
+CLK => inst5.IN0
+ENA => inst3.ENA
+ENA => inst.ENA
+ENA => inst1.ENA
+
+
+|CentralControl|State:inst
+S[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+I[0] => inst3.IN0
+I[0] => inst9.IN0
+I[0] => inst4.IN0
+I[1] => inst9.IN1
+I[1] => inst2.IN0
+I[1] => inst4.IN1
+I[2] => inst17.IN1
+I[2] => inst.IN0
+I[2] => inst7.IN1
+
+

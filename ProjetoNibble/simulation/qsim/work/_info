@@ -1,0 +1,178 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pedro/projectNibble/ProjetoNibble/simulation/qsim
+vCentralControl
+Z1 !s110 1478487490
+!i10b 1
+!s100 2gFkBY3nW<=FeDWXa2j;L3
+In6mAO]^QMlK;G0mI3NZ8Z2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1478487489
+Z3 8ProjetoNibble.vo
+Z4 FProjetoNibble.vo
+Z5 L0 32
+Z6 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z7 !s108 1478487490.000000
+Z8 !s107 ProjetoNibble.vo|
+Z9 !s90 -work|work|ProjetoNibble.vo|
+!i113 1
+Z10 o-work work
+n@central@control
+vCentralControl_vlg_vec_tst
+R1
+!i10b 1
+!s100 =@ZGVK65>:[;nG8REabnR1
+ITTJhmzn7iX64o_gSMQNW00
+R2
+R0
+w1478487488
+Z11 8Waveform.vwf.vt
+Z12 FWaveform.vwf.vt
+Z13 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+Z14 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+n@central@control_vlg_vec_tst
+vMain
+Z15 !s110 1478463119
+!i10b 1
+!s100 Ffi3F9b9?X;0KkzD;I2H81
+IGOY4;0:HoSRBV98^gQ?AA0
+R2
+R0
+w1478463118
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z16 !s108 1478463119.000000
+R8
+R9
+!i113 1
+R10
+n@main
+vMain_vlg_vec_tst
+R15
+!i10b 1
+!s100 G27j6I^>IoRKQ^2[bdhnJ3
+IXXj]d1mP6?2fW4H][R>RR2
+R2
+R0
+w1478463117
+R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R16
+!s107 Waveform.vwf.vt|
+R14
+!i113 1
+R10
+n@main_vlg_vec_tst
+vState
+Z17 !s110 1478487037
+!i10b 1
+!s100 Q:PJhVKZ<hGgjLDZJhzz[0
+I^BOOfPQ2UaJM;VKS`_jW?2
+R2
+R0
+w1478487036
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z18 !s108 1478487037.000000
+R8
+R9
+!i113 1
+R10
+n@state
+vState_vlg_vec_tst
+R17
+!i10b 1
+!s100 3hE5kW8MRdT^id`_T@Oo82
+IM_BmWKLo>zk`KjnUO9;G01
+R2
+R0
+w1478487035
+R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R18
+!s107 Waveform.vwf.vt|
+R14
+!i113 1
+R10
+n@state_vlg_vec_tst
+vTransform5for4
+Z19 !s110 1478459912
+!i10b 1
+!s100 VW[`:e?i_`fRb9_JL9QKh3
+IXm_Mc1YE4J`58<Ic>T3DU2
+R2
+R0
+w1478459911
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1478459912.000000
+R8
+R9
+!i113 1
+R10
+n@transform5for4
+vTransform5for4_vlg_vec_tst
+R19
+!i10b 1
+!s100 EdIN_]KnP4Xl:^kV:TQG93
+Icd80dfRF1hg@4QPUL46dV2
+R2
+R0
+w1478459910
+R11
+R12
+R13
+R6
+r1
+!s85 0
+31
+R20
+!s107 Waveform.vwf.vt|
+R14
+!i113 1
+R10
+n@transform5for4_vlg_vec_tst

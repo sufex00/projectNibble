@@ -1,268 +1,48 @@
-|dffe24
-Q[0] <= dffe8:inst.Q[0]
-Q[1] <= dffe8:inst.Q[1]
-Q[2] <= dffe8:inst.Q[2]
-Q[3] <= dffe8:inst.Q[3]
-Q[4] <= dffe8:inst.Q[4]
-Q[5] <= dffe8:inst.Q[5]
-Q[6] <= dffe8:inst.Q[6]
-Q[7] <= dffe8:inst.Q[7]
-Q[8] <= dffe8:inst1.Q[0]
-Q[9] <= dffe8:inst1.Q[1]
-Q[10] <= dffe8:inst1.Q[2]
-Q[11] <= dffe8:inst1.Q[3]
-Q[12] <= dffe8:inst1.Q[4]
-Q[13] <= dffe8:inst1.Q[5]
-Q[14] <= dffe8:inst1.Q[6]
-Q[15] <= dffe8:inst1.Q[7]
-Q[16] <= dffe8:inst2.Q[0]
-Q[17] <= dffe8:inst2.Q[1]
-Q[18] <= dffe8:inst2.Q[2]
-Q[19] <= dffe8:inst2.Q[3]
-Q[20] <= dffe8:inst2.Q[4]
-Q[21] <= dffe8:inst2.Q[5]
-Q[22] <= dffe8:inst2.Q[6]
-Q[23] <= dffe8:inst2.Q[7]
-PRN => dffe8:inst.PRN
-PRN => dffe8:inst1.PRN
-PRN => dffe8:inst2.PRN
-CLK => dffe8:inst.CLK
-CLK => dffe8:inst1.CLK
-CLK => dffe8:inst2.CLK
-ENA => dffe8:inst.ENA
-ENA => dffe8:inst1.ENA
-ENA => dffe8:inst2.ENA
-CLRN => dffe8:inst.CLRN
-CLRN => dffe8:inst1.CLRN
-CLRN => dffe8:inst2.CLRN
-D[0] => dffe8:inst.D[0]
-D[1] => dffe8:inst.D[1]
-D[2] => dffe8:inst.D[2]
-D[3] => dffe8:inst.D[3]
-D[4] => dffe8:inst.D[4]
-D[5] => dffe8:inst.D[5]
-D[6] => dffe8:inst.D[6]
-D[7] => dffe8:inst.D[7]
-D[8] => dffe8:inst1.D[0]
-D[9] => dffe8:inst1.D[1]
-D[10] => dffe8:inst1.D[2]
-D[11] => dffe8:inst1.D[3]
-D[12] => dffe8:inst1.D[4]
-D[13] => dffe8:inst1.D[5]
-D[14] => dffe8:inst1.D[6]
-D[15] => dffe8:inst1.D[7]
-D[16] => dffe8:inst2.D[0]
-D[17] => dffe8:inst2.D[1]
-D[18] => dffe8:inst2.D[2]
-D[19] => dffe8:inst2.D[3]
-D[20] => dffe8:inst2.D[4]
-D[21] => dffe8:inst2.D[5]
-D[22] => dffe8:inst2.D[6]
-D[23] => dffe8:inst2.D[7]
+|dffe6
+Q[0] <= dffe5:inst.Q[0]
+Q[1] <= dffe5:inst.Q[1]
+Q[2] <= dffe5:inst.Q[2]
+Q[3] <= dffe5:inst.Q[3]
+Q[4] <= dffe5:inst.Q[4]
+Q[5] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+PRN => dffe5:inst.PRN
+PRN => inst1.PRESET
+CLK => dffe5:inst.CLK
+CLK => inst3.IN0
+ENA => dffe5:inst.ENA
+ENA => inst1.ENA
+CLRN => dffe5:inst.CLRN
+CLRN => inst1.ACLR
+D[0] => dffe5:inst.D[0]
+D[1] => dffe5:inst.D[1]
+D[2] => dffe5:inst.D[2]
+D[3] => dffe5:inst.D[3]
+D[4] => dffe5:inst.D[4]
+D[5] => inst1.DATAIN
 
 
-|dffe24|dffe8:inst
+|dffe6|dffe5:inst
 Q[0] <= dffe4:inst.Q[0]
 Q[1] <= dffe4:inst.Q[1]
 Q[2] <= dffe4:inst.Q[2]
 Q[3] <= dffe4:inst.Q[3]
-Q[4] <= dffe4:inst1.Q[0]
-Q[5] <= dffe4:inst1.Q[1]
-Q[6] <= dffe4:inst1.Q[2]
-Q[7] <= dffe4:inst1.Q[3]
+Q[4] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 ENA => dffe4:inst.ENA
-ENA => dffe4:inst1.ENA
+ENA => inst1.ENA
 CLRN => dffe4:inst.CLRN
-CLRN => dffe4:inst1.CLRN
+CLRN => inst1.ACLR
 PRN => dffe4:inst.PRN
-PRN => dffe4:inst1.PRN
+PRN => inst1.PRESET
 CLK => dffe4:inst.CLK
-CLK => dffe4:inst1.CLK
+CLK => inst3.IN0
 D[0] => dffe4:inst.D[0]
 D[1] => dffe4:inst.D[1]
 D[2] => dffe4:inst.D[2]
 D[3] => dffe4:inst.D[3]
-D[4] => dffe4:inst1.D[0]
-D[5] => dffe4:inst1.D[1]
-D[6] => dffe4:inst1.D[2]
-D[7] => dffe4:inst1.D[3]
+D[4] => inst1.DATAIN
 
 
-|dffe24|dffe8:inst|dffe4:inst
-Q[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-PRN => inst3.PRESET
-PRN => inst.PRESET
-PRN => inst1.PRESET
-PRN => inst2.PRESET
-CLRN => inst3.ACLR
-CLRN => inst.ACLR
-CLRN => inst1.ACLR
-CLRN => inst2.ACLR
-D[0] => inst3.DATAIN
-D[1] => inst.DATAIN
-D[2] => inst1.DATAIN
-D[3] => inst2.DATAIN
-CLK => inst5.IN0
-ENA => inst3.ENA
-ENA => inst.ENA
-ENA => inst1.ENA
-ENA => inst2.ENA
-
-
-|dffe24|dffe8:inst|dffe4:inst1
-Q[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-PRN => inst3.PRESET
-PRN => inst.PRESET
-PRN => inst1.PRESET
-PRN => inst2.PRESET
-CLRN => inst3.ACLR
-CLRN => inst.ACLR
-CLRN => inst1.ACLR
-CLRN => inst2.ACLR
-D[0] => inst3.DATAIN
-D[1] => inst.DATAIN
-D[2] => inst1.DATAIN
-D[3] => inst2.DATAIN
-CLK => inst5.IN0
-ENA => inst3.ENA
-ENA => inst.ENA
-ENA => inst1.ENA
-ENA => inst2.ENA
-
-
-|dffe24|dffe8:inst1
-Q[0] <= dffe4:inst.Q[0]
-Q[1] <= dffe4:inst.Q[1]
-Q[2] <= dffe4:inst.Q[2]
-Q[3] <= dffe4:inst.Q[3]
-Q[4] <= dffe4:inst1.Q[0]
-Q[5] <= dffe4:inst1.Q[1]
-Q[6] <= dffe4:inst1.Q[2]
-Q[7] <= dffe4:inst1.Q[3]
-ENA => dffe4:inst.ENA
-ENA => dffe4:inst1.ENA
-CLRN => dffe4:inst.CLRN
-CLRN => dffe4:inst1.CLRN
-PRN => dffe4:inst.PRN
-PRN => dffe4:inst1.PRN
-CLK => dffe4:inst.CLK
-CLK => dffe4:inst1.CLK
-D[0] => dffe4:inst.D[0]
-D[1] => dffe4:inst.D[1]
-D[2] => dffe4:inst.D[2]
-D[3] => dffe4:inst.D[3]
-D[4] => dffe4:inst1.D[0]
-D[5] => dffe4:inst1.D[1]
-D[6] => dffe4:inst1.D[2]
-D[7] => dffe4:inst1.D[3]
-
-
-|dffe24|dffe8:inst1|dffe4:inst
-Q[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-PRN => inst3.PRESET
-PRN => inst.PRESET
-PRN => inst1.PRESET
-PRN => inst2.PRESET
-CLRN => inst3.ACLR
-CLRN => inst.ACLR
-CLRN => inst1.ACLR
-CLRN => inst2.ACLR
-D[0] => inst3.DATAIN
-D[1] => inst.DATAIN
-D[2] => inst1.DATAIN
-D[3] => inst2.DATAIN
-CLK => inst5.IN0
-ENA => inst3.ENA
-ENA => inst.ENA
-ENA => inst1.ENA
-ENA => inst2.ENA
-
-
-|dffe24|dffe8:inst1|dffe4:inst1
-Q[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-PRN => inst3.PRESET
-PRN => inst.PRESET
-PRN => inst1.PRESET
-PRN => inst2.PRESET
-CLRN => inst3.ACLR
-CLRN => inst.ACLR
-CLRN => inst1.ACLR
-CLRN => inst2.ACLR
-D[0] => inst3.DATAIN
-D[1] => inst.DATAIN
-D[2] => inst1.DATAIN
-D[3] => inst2.DATAIN
-CLK => inst5.IN0
-ENA => inst3.ENA
-ENA => inst.ENA
-ENA => inst1.ENA
-ENA => inst2.ENA
-
-
-|dffe24|dffe8:inst2
-Q[0] <= dffe4:inst.Q[0]
-Q[1] <= dffe4:inst.Q[1]
-Q[2] <= dffe4:inst.Q[2]
-Q[3] <= dffe4:inst.Q[3]
-Q[4] <= dffe4:inst1.Q[0]
-Q[5] <= dffe4:inst1.Q[1]
-Q[6] <= dffe4:inst1.Q[2]
-Q[7] <= dffe4:inst1.Q[3]
-ENA => dffe4:inst.ENA
-ENA => dffe4:inst1.ENA
-CLRN => dffe4:inst.CLRN
-CLRN => dffe4:inst1.CLRN
-PRN => dffe4:inst.PRN
-PRN => dffe4:inst1.PRN
-CLK => dffe4:inst.CLK
-CLK => dffe4:inst1.CLK
-D[0] => dffe4:inst.D[0]
-D[1] => dffe4:inst.D[1]
-D[2] => dffe4:inst.D[2]
-D[3] => dffe4:inst.D[3]
-D[4] => dffe4:inst1.D[0]
-D[5] => dffe4:inst1.D[1]
-D[6] => dffe4:inst1.D[2]
-D[7] => dffe4:inst1.D[3]
-
-
-|dffe24|dffe8:inst2|dffe4:inst
-Q[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-PRN => inst3.PRESET
-PRN => inst.PRESET
-PRN => inst1.PRESET
-PRN => inst2.PRESET
-CLRN => inst3.ACLR
-CLRN => inst.ACLR
-CLRN => inst1.ACLR
-CLRN => inst2.ACLR
-D[0] => inst3.DATAIN
-D[1] => inst.DATAIN
-D[2] => inst1.DATAIN
-D[3] => inst2.DATAIN
-CLK => inst5.IN0
-ENA => inst3.ENA
-ENA => inst.ENA
-ENA => inst1.ENA
-ENA => inst2.ENA
-
-
-|dffe24|dffe8:inst2|dffe4:inst1
+|dffe6|dffe5:inst|dffe4:inst
 Q[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE

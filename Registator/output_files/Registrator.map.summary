@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Sat Nov  5 23:15:22 2016
+Analysis & Synthesis Status : Successful - Sun Nov  6 15:34:04 2016
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : Registrator
-Top-level Entity Name : dffe24
+Top-level Entity Name : dffe6
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 24
-Total pins : 52
+Total registers : 6
+Total pins : 16
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
