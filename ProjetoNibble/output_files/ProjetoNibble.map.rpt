@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjetoNibble
-Mon Nov  7 09:00:20 2016
+Mon Nov  7 16:32:50 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov  7 09:00:20 2016       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov  7 16:32:50 2016       ;
 ; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                   ; ProjetoNibble                               ;
-; Top-level Entity Name           ; Main                                        ;
+; Top-level Entity Name           ; CentralControl                              ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 2                                           ;
+; Total registers                 ; 3                                           ;
+; Total pins                      ; 14                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -69,7 +69,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Main               ; ProjetoNibble      ;
+; Top-level entity name                                                           ; CentralControl     ; ProjetoNibble      ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -157,74 +157,58 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 2      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                     ; Library ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------+---------+
-; Suc5bitR.bdf                     ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/Suc5bitR.bdf             ;         ;
-; dffe5.bdf                        ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/dffe5.bdf                ;         ;
-; dffe6.bdf                        ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/dffe6.bdf                ;         ;
-; Main.bdf                         ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/Main.bdf                 ;         ;
-; Suc5bits.bdf                     ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/Suc5bits.bdf             ;         ;
-; dffe4.bdf                        ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/dffe4.bdf                ;         ;
-; Add18its.bdf                     ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/Add18its.bdf             ;         ;
-; single_port_rom.v                ; yes             ; User Verilog HDL File                    ; /home/pedro/projectNibble/ProjetoNibble/single_port_rom.v        ;         ;
-; Transform5for4.bdf               ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/Transform5for4.bdf       ;         ;
-; dffe24.bdf                       ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/dffe24.bdf               ;         ;
-; dffe8.bdf                        ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/dffe8.bdf                ;         ;
-; Decoder.bdf                      ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/Decoder.bdf              ;         ;
-; dffe3.bdf                        ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/dffe3.bdf                ;         ;
-; mux2.v                           ; yes             ; User Verilog HDL File                    ; /home/pedro/projectNibble/ProjetoNibble/mux2.v                   ;         ;
-; Add8bits.bdf                     ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/Add8bits.bdf             ;         ;
-; Complemento2.bdf                 ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/Complemento2.bdf         ;         ;
-; single_port_ram.v                ; yes             ; User Verilog HDL File                    ; /home/pedro/projectNibble/ProjetoNibble/single_port_ram.v        ;         ;
-; State.bdf                        ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/State.bdf                ;         ;
-; CentralControl.bdf               ; yes             ; User Block Diagram/Schematic File        ; /home/pedro/projectNibble/ProjetoNibble/CentralControl.bdf       ;         ;
-; single_port_rom_init.txt         ; yes             ; Auto-Found File                          ; /home/pedro/projectNibble/ProjetoNibble/single_port_rom_init.txt ;         ;
-; not8.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; /home/pedro/projectNibble/ProjetoNibble/not8.bdf                 ;         ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
+; dffe3.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/alunoic/projectNibble/ProjetoNibble/dffe3.bdf          ;         ;
+; State.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/alunoic/projectNibble/ProjetoNibble/State.bdf          ;         ;
+; CentralControl.bdf               ; yes             ; User Block Diagram/Schematic File  ; /home/alunoic/projectNibble/ProjetoNibble/CentralControl.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 0     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 0     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 0     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 0     ;
-;     -- <=3 input functions                  ; 0     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 2     ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; CLK   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 2     ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimate of Logic utilization (ALMs needed) ; 2                 ;
+;                                             ;                   ;
+; Combinational ALUT usage for logic          ; 4                 ;
+;     -- 7 input functions                    ; 0                 ;
+;     -- 6 input functions                    ; 0                 ;
+;     -- 5 input functions                    ; 0                 ;
+;     -- 4 input functions                    ; 2                 ;
+;     -- <=3 input functions                  ; 2                 ;
+;                                             ;                   ;
+; Dedicated logic registers                   ; 3                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 14                ;
+;                                             ;                   ;
+; Total DSP Blocks                            ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; dffe3:inst1|inst1 ;
+; Maximum fan-out                             ; 7                 ;
+; Total fan-out                               ; 48                ;
+; Average fan-out                             ; 1.37              ;
++---------------------------------------------+-------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |Main                      ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 2    ; 0            ; |Main               ; Main        ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Entity Name    ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+----------------+--------------+
+; |CentralControl            ; 4 (1)             ; 3 (0)        ; 0                 ; 0          ; 14   ; 0            ; |CentralControl             ; CentralControl ; work         ;
+;    |State:inst|            ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |CentralControl|State:inst  ; State          ; work         ;
+;    |dffe3:inst1|           ; 0 (0)             ; 3 (3)        ; 0                 ; 0          ; 0    ; 0            ; |CentralControl|dffe3:inst1 ; dffe3          ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -233,26 +217,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 3     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 3     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 3     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 2                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 3                           ;
+;     ENA CLR           ; 3                           ;
+; arriav_lcell_comb     ; 5                           ;
+;     normal            ; 5                           ;
+;         1 data inputs ; 1                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 2                           ;
+; boundary_port         ; 14                          ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.69                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -260,7 +251,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -270,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Nov  7 09:00:06 2016
+    Info: Processing started: Mon Nov  7 16:32:21 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjetoNibble -c ProjetoNibble
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file Suc5bitR.bdf
@@ -288,7 +279,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file dffe4.b
 Info (12021): Found 1 design units, including 1 entities, in source file Add18its.bdf
     Info (12023): Found entity 1: Add18its
 Info (12021): Found 1 design units, including 1 entities, in source file single_port_rom.v
-    Info (12023): Found entity 1: single_port_rom File: /home/pedro/projectNibble/ProjetoNibble/single_port_rom.v Line: 4
+    Info (12023): Found entity 1: single_port_rom File: /home/alunoic/projectNibble/ProjetoNibble/single_port_rom.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file Transform5for4.bdf
     Info (12023): Found entity 1: Transform5for4
 Info (12021): Found 1 design units, including 1 entities, in source file dffe24.bdf
@@ -300,55 +291,33 @@ Info (12021): Found 1 design units, including 1 entities, in source file Decoder
 Info (12021): Found 1 design units, including 1 entities, in source file dffe3.bdf
     Info (12023): Found entity 1: dffe3
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.v
-    Info (12023): Found entity 1: mux2 File: /home/pedro/projectNibble/ProjetoNibble/mux2.v Line: 1
+    Info (12023): Found entity 1: mux2 File: /home/alunoic/projectNibble/ProjetoNibble/mux2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Add8bits.bdf
     Info (12023): Found entity 1: Add8bits
 Info (12021): Found 1 design units, including 1 entities, in source file Complemento2.bdf
     Info (12023): Found entity 1: Complemento2
 Info (12021): Found 1 design units, including 1 entities, in source file single_port_ram.v
-    Info (12023): Found entity 1: single_port_ram File: /home/pedro/projectNibble/ProjetoNibble/single_port_ram.v Line: 4
+    Info (12023): Found entity 1: single_port_ram File: /home/alunoic/projectNibble/ProjetoNibble/single_port_ram.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file State.bdf
     Info (12023): Found entity 1: State
 Info (12021): Found 1 design units, including 1 entities, in source file CentralControl.bdf
     Info (12023): Found entity 1: CentralControl
-Info (12127): Elaborating entity "Main" for the top level hierarchy
-Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:Decoder_"
-Info (12128): Elaborating entity "dffe24" for hierarchy "dffe24:inst8"
-Info (12128): Elaborating entity "dffe8" for hierarchy "dffe24:inst8|dffe8:inst"
-Info (12128): Elaborating entity "dffe4" for hierarchy "dffe24:inst8|dffe8:inst|dffe4:inst"
-Info (12128): Elaborating entity "CentralControl" for hierarchy "CentralControl:inst1"
-Info (12128): Elaborating entity "dffe3" for hierarchy "CentralControl:inst1|dffe3:inst1"
-Info (12128): Elaborating entity "State" for hierarchy "CentralControl:inst1|State:inst"
-Info (12128): Elaborating entity "single_port_rom" for hierarchy "single_port_rom:inst5"
-Warning (10850): Verilog HDL warning at single_port_rom.v(24): number of words (13) in memory file does not match the number of elements in the address range [0:31] File: /home/pedro/projectNibble/ProjetoNibble/single_port_rom.v Line: 24
-Warning (10030): Net "rom.data_a" at single_port_rom.v(12) has no driver or initial value, using a default initial value '0' File: /home/pedro/projectNibble/ProjetoNibble/single_port_rom.v Line: 12
-Warning (10030): Net "rom.waddr_a" at single_port_rom.v(12) has no driver or initial value, using a default initial value '0' File: /home/pedro/projectNibble/ProjetoNibble/single_port_rom.v Line: 12
-Warning (10030): Net "rom.we_a" at single_port_rom.v(12) has no driver or initial value, using a default initial value '0' File: /home/pedro/projectNibble/ProjetoNibble/single_port_rom.v Line: 12
-Info (12128): Elaborating entity "Transform5for4" for hierarchy "Transform5for4:inst6"
-Info (12128): Elaborating entity "dffe6" for hierarchy "dffe6:inst3"
-Info (12128): Elaborating entity "dffe5" for hierarchy "dffe6:inst3|dffe5:inst"
-Info (12128): Elaborating entity "Suc5bitR" for hierarchy "Suc5bitR:inst"
-Info (12128): Elaborating entity "Suc5bits" for hierarchy "Suc5bitR:inst|Suc5bits:inst"
-Info (12128): Elaborating entity "Add18its" for hierarchy "Suc5bitR:inst|Suc5bits:inst|Add18its:inst6"
-Info (12128): Elaborating entity "Add8bits" for hierarchy "Add8bits:inst13"
-Info (12128): Elaborating entity "mux2" for hierarchy "mux2:inst16"
-Info (12128): Elaborating entity "Complemento2" for hierarchy "Complemento2:inst15"
-Warning (12125): Using design file not8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: not8
-Info (12128): Elaborating entity "not8" for hierarchy "Complemento2:inst15|not8:inst11"
-Info (12128): Elaborating entity "single_port_ram" for hierarchy "single_port_ram:inst17"
+Info (12127): Elaborating entity "CentralControl" for the top level hierarchy
+Info (12128): Elaborating entity "dffe3" for hierarchy "dffe3:inst1"
+Info (12128): Elaborating entity "State" for hierarchy "State:inst"
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLK"
-    Warning (15610): No output dependent on input pin "CLRN"
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 1282 megabytes
-    Info: Processing ended: Mon Nov  7 09:00:20 2016
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:37
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "OP[2]"
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 4 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 1277 megabytes
+    Info: Processing ended: Mon Nov  7 16:32:50 2016
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:31
 
 

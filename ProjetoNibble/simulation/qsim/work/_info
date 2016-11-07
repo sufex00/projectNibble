@@ -9,170 +9,170 @@ z2
 cModel Technology
 Z0 d/home/pedro/projectNibble/ProjetoNibble/simulation/qsim
 vCentralControl
-Z1 !s110 1478516702
+Z1 !s110 1478547210
 !i10b 1
-!s100 2o;Xcic`_6z8n^7Df6G^10
-IfX<f;k]mmThC@e2M5lQV62
+!s100 KWRW?K=PIj1UUaQnQhX6?1
+IYNfW0C=BTIJTDcU>A>kO>2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1478516701
-Z3 8ProjetoNibble.vo
-Z4 FProjetoNibble.vo
-Z5 L0 32
-Z6 OV;L;10.4d;61
+Z3 d/home/alunoic/projectNibble/ProjetoNibble/simulation/qsim
+w1478547209
+Z4 8ProjetoNibble.vo
+Z5 FProjetoNibble.vo
+Z6 L0 32
+Z7 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z7 !s108 1478516702.000000
-Z8 !s107 ProjetoNibble.vo|
-Z9 !s90 -work|work|ProjetoNibble.vo|
+Z8 !s108 1478547210.000000
+Z9 !s107 ProjetoNibble.vo|
+Z10 !s90 -work|work|ProjetoNibble.vo|
 !i113 1
-Z10 o-work work
+Z11 o-work work
 n@central@control
 vCentralControl_vlg_vec_tst
 R1
 !i10b 1
-!s100 W@kcd@YYmQ:bb5_k;o>JQ2
-IRA9M=1mjN=9W]A]C3?>d63
+!s100 R@d>XE8F;U=<MD?9nS=AX2
+IoRlbz87KKfj7OdM2>QezM3
 R2
-R0
-w1478516699
-Z11 8Waveform.vwf.vt
-Z12 FWaveform.vwf.vt
-Z13 L0 30
-R6
+R3
+w1478547207
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+Z12 L0 30
+R7
 r1
 !s85 0
 31
-R7
-!s107 Waveform.vwf.vt|
-Z14 !s90 -work|work|Waveform.vwf.vt|
+R8
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
 !i113 1
-R10
+R11
 n@central@control_vlg_vec_tst
 vMain
-Z15 !s110 1478463119
+Z13 !s110 1478546582
 !i10b 1
-!s100 Ffi3F9b9?X;0KkzD;I2H81
-IGOY4;0:HoSRBV98^gQ?AA0
+!s100 :kIW826FEXAlXoaIf?8E72
+I=CaCFl^ndgL`6GQYDIY6^2
 R2
-R0
-w1478463118
 R3
+w1478546580
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
-Z16 !s108 1478463119.000000
-R8
+!s108 1478546581.000000
 R9
-!i113 1
 R10
+!i113 1
+R11
 n@main
 vMain_vlg_vec_tst
-R15
-!i10b 1
-!s100 G27j6I^>IoRKQ^2[bdhnJ3
-IXXj]d1mP6?2fW4H][R>RR2
-R2
-R0
-w1478463117
-R11
-R12
 R13
-R6
+!i10b 1
+!s100 YnYc7fnEfA5gkIfK82<<A2
+IWVSbHkeh?NP[DegP2fg;X0
+R2
+R3
+w1478546579
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+R12
+R7
 r1
 !s85 0
 31
-R16
-!s107 Waveform.vwf.vt|
-R14
+!s108 1478546582.000000
+Z16 !s107 Waveform.vwf.vt|
+Z17 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R10
+R11
 n@main_vlg_vec_tst
 vState
-Z17 !s110 1478487037
+Z18 !s110 1478487037
 !i10b 1
 !s100 Q:PJhVKZ<hGgjLDZJhzz[0
 I^BOOfPQ2UaJM;VKS`_jW?2
 R2
 R0
 w1478487036
-R3
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
-Z18 !s108 1478487037.000000
-R8
+Z19 !s108 1478487037.000000
 R9
-!i113 1
 R10
+!i113 1
+R11
 n@state
 vState_vlg_vec_tst
-R17
+R18
 !i10b 1
 !s100 3hE5kW8MRdT^id`_T@Oo82
 IM_BmWKLo>zk`KjnUO9;G01
 R2
 R0
 w1478487035
-R11
+R14
+R15
 R12
-R13
-R6
+R7
 r1
 !s85 0
 31
-R18
-!s107 Waveform.vwf.vt|
-R14
+R19
+R16
+R17
 !i113 1
-R10
+R11
 n@state_vlg_vec_tst
 vTransform5for4
-Z19 !s110 1478459912
+Z20 !s110 1478459912
 !i10b 1
 !s100 VW[`:e?i_`fRb9_JL9QKh3
 IXm_Mc1YE4J`58<Ic>T3DU2
 R2
 R0
 w1478459911
-R3
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
-Z20 !s108 1478459912.000000
-R8
+Z21 !s108 1478459912.000000
 R9
-!i113 1
 R10
+!i113 1
+R11
 n@transform5for4
 vTransform5for4_vlg_vec_tst
-R19
+R20
 !i10b 1
 !s100 EdIN_]KnP4Xl:^kV:TQG93
 Icd80dfRF1hg@4QPUL46dV2
 R2
 R0
 w1478459910
-R11
+R14
+R15
 R12
-R13
-R6
+R7
 r1
 !s85 0
 31
-R20
-!s107 Waveform.vwf.vt|
-R14
+R21
+R16
+R17
 !i113 1
-R10
+R11
 n@transform5for4_vlg_vec_tst

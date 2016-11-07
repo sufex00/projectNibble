@@ -19,38 +19,50 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/07/2016 08:04:59"
+// Generated on "11/07/2016 16:22:58"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          CentralControl
+// Verilog Test Bench (with test vectors) for design :                          Main
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module CentralControl_vlg_vec_tst();
+module Main_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg CLK;
 reg CLRN;
-reg ENA;
-reg [2:0] OP;
 // wires                                               
-wire mux_X;
-wire mux_Y;
-wire out_we;
-wire [2:0] Sai;
+wire [4:0] ADDR_PR;
+wire [7:0] FIN_PR;
+wire [23:0] inst_pr;
+wire [7:0] MUX_X_PR;
+wire [7:0] MUX_Y_PR;
+wire [2:0] OP_PR;
+wire [5:0] pc_pr;
+wire [7:0] R_PR;
+wire [23:0] rom_pr;
+wire [7:0] s_PR;
+wire [7:0] X_PR;
+wire [7:0] Y_PR;
 
 // assign statements (if any)                          
-CentralControl i1 (
+Main i1 (
 // port map - connection between master ports and signals/registers   
+	.ADDR_PR(ADDR_PR),
 	.CLK(CLK),
 	.CLRN(CLRN),
-	.ENA(ENA),
-	.mux_X(mux_X),
-	.mux_Y(mux_Y),
-	.OP(OP),
-	.out_we(out_we),
-	.Sai(Sai)
+	.FIN_PR(FIN_PR),
+	.inst_pr(inst_pr),
+	.MUX_X_PR(MUX_X_PR),
+	.MUX_Y_PR(MUX_Y_PR),
+	.OP_PR(OP_PR),
+	.pc_pr(pc_pr),
+	.R_PR(R_PR),
+	.rom_pr(rom_pr),
+	.s_PR(s_PR),
+	.X_PR(X_PR),
+	.Y_PR(Y_PR)
 );
 initial 
 begin 
@@ -69,38 +81,7 @@ end
 initial
 begin
 	CLRN = 1'b0;
-	CLRN = #40000 1'b1;
-end 
-
-// ENA
-initial
-begin
-	ENA = 1'b1;
-end 
-// OP[ 2 ]
-initial
-begin
-	repeat(12)
-	begin
-		OP[2] = 1'b0;
-		OP[2] = #40000 1'b1;
-		# 40000;
-	end
-	OP[2] = 1'b0;
-end 
-// OP[ 1 ]
-always
-begin
-	OP[1] = 1'b0;
-	OP[1] = #20000 1'b1;
-	#20000;
-end 
-// OP[ 0 ]
-always
-begin
-	OP[0] = 1'b0;
-	OP[0] = #10000 1'b1;
-	#10000;
+	CLRN = #10000 1'b1;
 end 
 endmodule
 
