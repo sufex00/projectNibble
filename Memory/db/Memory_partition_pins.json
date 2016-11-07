@@ -4,19 +4,23 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Y[7]",
+					"name" : "Y[18]",
 					"strict" : false
 				},
 				{
-					"name" : "Y[6]",
+					"name" : "Y[17]",
 					"strict" : false
 				},
 				{
-					"name" : "Y[5]",
+					"name" : "Y[10]",
 					"strict" : false
 				},
 				{
-					"name" : "Y[4]",
+					"name" : "Y[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Y[8]",
 					"strict" : false
 				},
 				{
@@ -36,15 +40,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "we",
-					"strict" : false
-				},
-				{
-					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "data[7]",
+					"name" : "ar[4]",
 					"strict" : false
 				},
 				{
@@ -64,35 +60,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "ar[4]",
-					"strict" : false
-				},
-				{
-					"name" : "data[6]",
-					"strict" : false
-				},
-				{
-					"name" : "data[5]",
-					"strict" : false
-				},
-				{
-					"name" : "data[4]",
-					"strict" : false
-				},
-				{
-					"name" : "data[3]",
-					"strict" : false
-				},
-				{
-					"name" : "data[2]",
-					"strict" : false
-				},
-				{
-					"name" : "data[1]",
-					"strict" : false
-				},
-				{
-					"name" : "data[0]",
+					"name" : "clk",
 					"strict" : false
 				}
 			]

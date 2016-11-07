@@ -2,52 +2,7 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : [
-				{
-					"name" : "mux_X",
-					"strict" : false
-				},
-				{
-					"name" : "mux_Y",
-					"strict" : false
-				},
-				{
-					"name" : "out_we",
-					"strict" : false
-				},
-				{
-					"name" : "Sai[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Sai[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Sai[0]",
-					"strict" : false
-				},
-				{
-					"name" : "OP[1]",
-					"strict" : false
-				},
-				{
-					"name" : "OP[0]",
-					"strict" : false
-				},
-				{
-					"name" : "CLK",
-					"strict" : false
-				},
-				{
-					"name" : "CLRN",
-					"strict" : false
-				},
-				{
-					"name" : "ENA",
-					"strict" : false
-				}
-			]
+			"pins" : []
 		}
 	]
 }

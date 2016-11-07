@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 d/home/pedro/projectNibble/ProjetoNibble/simulation/qsim
 vCentralControl
-Z1 !s110 1478493226
+Z1 !s110 1478516702
 !i10b 1
 !s100 2o;Xcic`_6z8n^7Df6G^10
 IfX<f;k]mmThC@e2M5lQV62
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1478493225
+w1478516701
 Z3 8ProjetoNibble.vo
 Z4 FProjetoNibble.vo
 Z5 L0 32
@@ -23,7 +23,7 @@ Z6 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z7 !s108 1478493226.000000
+Z7 !s108 1478516702.000000
 Z8 !s107 ProjetoNibble.vo|
 Z9 !s90 -work|work|ProjetoNibble.vo|
 !i113 1
@@ -36,7 +36,7 @@ R1
 IRA9M=1mjN=9W]A]C3?>d63
 R2
 R0
-w1478493224
+w1478516699
 Z11 8Waveform.vwf.vt
 Z12 FWaveform.vwf.vt
 Z13 L0 30

@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/06/2016 11:29:53"
+// Generated on "11/07/2016 08:01:47"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          test
 // 
@@ -32,18 +32,14 @@ module test_vlg_vec_tst();
 // general purpose registers
 reg [4:0] ar;
 reg clk;
-reg [7:0] data;
-reg we;
 // wires                                               
-wire [7:0] Y;
+wire [23:0] Y;
 
 // assign statements (if any)                          
 test i1 (
 // port map - connection between master ports and signals/registers   
 	.ar(ar),
 	.clk(clk),
-	.data(data),
-	.we(we),
 	.Y(Y)
 );
 initial 
@@ -104,80 +100,6 @@ begin
 	clk = 1'b0;
 	clk = #5000 1'b1;
 	#5000;
-end 
-// data[ 7 ]
-initial
-begin
-	data[7] = 1'b0;
-end 
-// data[ 6 ]
-initial
-begin
-	data[6] = 1'b0;
-	data[6] = #640000 1'b1;
-end 
-// data[ 5 ]
-initial
-begin
-	data[5] = 1'b0;
-	data[5] = #320000 1'b1;
-	data[5] = #320000 1'b0;
-	data[5] = #320000 1'b1;
-end 
-// data[ 4 ]
-initial
-begin
-	repeat(3)
-	begin
-		data[4] = 1'b0;
-		data[4] = #160000 1'b1;
-		# 160000;
-	end
-	data[4] = 1'b0;
-end 
-// data[ 3 ]
-initial
-begin
-	repeat(6)
-	begin
-		data[3] = 1'b0;
-		data[3] = #80000 1'b1;
-		# 80000;
-	end
-	data[3] = 1'b0;
-end 
-// data[ 2 ]
-initial
-begin
-	repeat(12)
-	begin
-		data[2] = 1'b0;
-		data[2] = #40000 1'b1;
-		# 40000;
-	end
-	data[2] = 1'b0;
-end 
-// data[ 1 ]
-always
-begin
-	data[1] = 1'b0;
-	data[1] = #20000 1'b1;
-	#20000;
-end 
-// data[ 0 ]
-always
-begin
-	data[0] = 1'b0;
-	data[0] = #10000 1'b1;
-	#10000;
-end 
-
-// we
-initial
-begin
-	we = 1'b0;
-	we = #320000 1'b1;
-	we = #670000 1'b0;
 end 
 endmodule
 
