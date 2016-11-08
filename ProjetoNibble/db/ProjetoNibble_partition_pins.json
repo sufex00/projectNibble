@@ -4,43 +4,283 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "mux_X",
+					"name" : "ADDR_PR[2]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_Y",
+					"name" : "ADDR_PR[1]",
 					"strict" : false
 				},
 				{
-					"name" : "out_we",
+					"name" : "FIN_PR[7]",
 					"strict" : false
 				},
 				{
-					"name" : "ENA_2",
+					"name" : "FIN_PR[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ENA_1",
+					"name" : "FIN_PR[5]",
 					"strict" : false
 				},
 				{
-					"name" : "saida[2]",
+					"name" : "FIN_PR[4]",
 					"strict" : false
 				},
 				{
-					"name" : "saida[1]",
+					"name" : "FIN_PR[3]",
 					"strict" : false
 				},
 				{
-					"name" : "saida[0]",
+					"name" : "FIN_PR[2]",
 					"strict" : false
 				},
 				{
-					"name" : "OP[1]",
+					"name" : "FIN_PR[1]",
 					"strict" : false
 				},
 				{
-					"name" : "OP[0]",
+					"name" : "FIN_PR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_pr[22]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_pr[21]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_pr[18]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_pr[17]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_pr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_pr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_pr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_pr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_X_PR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_X_PR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_X_PR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_X_PR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_X_PR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_X_PR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_X_PR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_X_PR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_Y_PR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_Y_PR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_Y_PR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_Y_PR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_Y_PR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_Y_PR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_Y_PR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MUX_Y_PR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OP_PR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OP_PR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pc_pr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pc_pr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pc_pr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pc_pr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pc_pr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pc_pr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R_PR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "R_PR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R_PR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R_PR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R_PR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R_PR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R_PR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R_PR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_pr[22]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_pr[21]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_pr[18]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_pr[17]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_pr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_pr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_pr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "rom_pr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "s_PR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "s_PR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "s_PR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "s_PR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "s_PR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "s_PR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "s_PR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "s_PR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Y_PR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Y_PR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Y_PR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Y_PR[0]",
 					"strict" : false
 				},
 				{
@@ -49,10 +289,6 @@
 				},
 				{
 					"name" : "CLRN",
-					"strict" : false
-				},
-				{
-					"name" : "ENA",
 					"strict" : false
 				}
 			]
